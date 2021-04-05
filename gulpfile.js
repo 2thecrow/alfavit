@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 
-let preprocessor = 'sass', // Preprocessor (sass, scss, less, styl)
+let preprocessor = 'scss', // Preprocessor (sass, scss, less, styl)
 		fileswatch   = 'html,htm,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
 		imageswatch  = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
 		baseDir      = 'app', // Base directory path without «/» at the end
@@ -26,8 +26,8 @@ let paths = {
 	},
 
 	images: {
-		src:  baseDir + '/images/src/**/*',
-		dest: baseDir + '/images/dest',
+		src:  baseDir + '/img/src/**/*',
+		dest: baseDir + '/img/dest',
 	},
 
 	deploy: {
@@ -37,8 +37,8 @@ let paths = {
 		exclude:     [ '**/Thumbs.db', '**/*.DS_Store' ], // Excluded files from deploy
 	},
 
-	cssOutputName: 'app.min.css',
-	jsOutputName:  'app.min.js',
+	cssOutputName: 'app.css',
+	jsOutputName:  'app.js',
 
 }
 
@@ -102,7 +102,7 @@ function styles() {
 	.pipe(eval(preprocessor)())
 	.pipe(concat(paths.cssOutputName))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-	.pipe(cleancss({ level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
+	.pipe(cleancss({ level: { 1: { specialComments: 0 } },format: 'beautify' }))
 	.pipe(dest(paths.styles.dest))
 	.pipe(browserSync.stream())
 }
@@ -135,7 +135,7 @@ function deploy() {
 
 function startwatch() {
 	watch(baseDir  + '/' + preprocessor + '/**/*', {usePolling: true}, styles);
-	watch(baseDir  + '/images/src/**/*.{' + imageswatch + '}', {usePolling: true}, images);
+	watch(baseDir  + '/img/src/**/*.{' + imageswatch + '}', {usePolling: true}, images);
 	watch(baseDir  + '/**/*.{' + fileswatch + '}', {usePolling: true}).on('change', browserSync.reload);
 	watch([baseDir + '/js/**/*.js', '!' + baseDir + '/js/**/*.min.js', '!' + baseDir + '/js/**/*.tmp.js'], {usePolling: true}, series(plugins, userscripts, scripts)).on('change', browserSync.reload);
 }

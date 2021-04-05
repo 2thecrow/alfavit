@@ -38,7 +38,7 @@ let paths = {
 	},
 
 	cssOutputName: 'app.css',
-	jsOutputName:  'app.js',
+	jsOutputName:  'apps.js',
 
 }
 

@@ -1,7 +1,8 @@
-@import 'config';
+@import 'config'; // start config
 
 // CUSTOM USER STYLES & IMPORTS
-@import 'global';
-@import 'menu';
+@import 'global/global'; // some global styles
+@import 'global/menu'; // global header menu
+@import 'welcome/header'; // welcome header
 
 

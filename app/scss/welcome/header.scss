@@ -1,0 +1,28 @@
+.header {
+    background-image: url(/img/dest/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    height: 1686px;
+    &__logo {
+        display: flex;
+        flex: 0 0 209px;
+        justify-content: center;
+        align-items: center;
+        max-width: 209px;
+        padding: 24px 24px 27px 24px;
+        background-color: #fff;
+        transition: all .25s ease-in-out;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, .9);
+            transition: all .25s ease-in-out;
+        }
+    }
+    &__nav {
+        display: flex;
+        
+    }
+}

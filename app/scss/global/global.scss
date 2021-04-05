@@ -1,0 +1,33 @@
+.wrapper {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 4px;
+    letter-spacing: -0.008em;
+    text-transform: uppercase;
+    text-decoration: none;
+    &__malachite {
+        border-bottom: 6px solid #008b12;
+        background-color: #00b83a;
+        box-shadow: 0px 16px 32px 0px rgba(0, 184, 58, 0.36);
+        &:hover {
+            background-color: rgba(0, 184, 58, .8);
+            border-bottom: 6px solid rgba(0, 139, 18, .8);
+            
+        }
+    }
+}
+
+  

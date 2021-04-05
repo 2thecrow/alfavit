@@ -1,6 +1,8 @@
 .header {
-    background-image: url(/img/dest/header/header-bg.jpg);
+    background: url(/img/dest/header/header-bg.jpg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 1686px;
     &__logo {
         display: flex;
@@ -25,4 +27,176 @@
         display: flex;
         
     }
+    &__container {
+        padding: 127px 0 0 0;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 88px;
+        color: #fff;
+        letter-spacing: -0.024em;
+        margin: 66px 0 15px 0;
+    }
+    &__sub-title {
+        max-width: 650px;
+        font-size: 15px;
+        line-height: 26px;
+        color: #fff;
+    }
+    &__developer {
+        position: relative;
+        max-width: 205px;
+        margin: 212px 0 0 0;
+    }
+    &__desc {
+
+    }
 }
+
+.header-developer {
+    &__logo {
+        display: block;
+        position: relative;
+        margin: 0 0 23px 0;
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 24px;
+        color: #fefefe;
+    }
+}
+
+.desc-home {
+    position: absolute;
+    top: 54%;
+    left: 69.5%;
+    &__container {
+        position: relative;
+        padding: 0 40px;
+        background-color: rgba(255,101,41,.85);
+        backdrop-filter: blur(3px);
+        border-radius: 3px;
+        &::before {
+            position: absolute;
+            content: '';
+            left: -38px;
+            top: 50px;
+            width: 39px;
+            height: 24px;
+            filter: blur(1px);
+            background-image: url(/img/dest/header/home-desc__bg.png);
+            background-repeat: no-repeat;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            &:not(:last-child) {
+                border-bottom: 1px solid #ff7e4b;
+            }
+        }
+    }
+    &__item {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        color: #fff;
+        padding: 18px 0;
+        span {
+            font-size: 11px;
+            letter-spacing: 0.016em;
+            margin: 0 0 0 -5px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.info-home {
+    position: absolute;
+    top: 72.45%;
+   
+    &__container {
+        position: relative;
+        max-width: 209px;
+        background-color: rgba(0, 184, 58, .72);
+        backdrop-filter: blur(3px);
+        padding: 0 33px;
+        &::before {
+            position: absolute;
+            content: '';
+            right: -38px;
+            bottom: 29px;
+            width: 39px;
+            height: 24px;
+            filter: blur(1px);
+            background-image: url(/img/dest/header/info-desc__bg.png);
+            background-repeat: no-repeat;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        padding: 29px 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid #6fbd85;
+        }
+        p {
+            margin: 0 0 8px 0;
+        }
+        span {
+            font-weight: 500;
+            display: inline-block;
+            font-size: 10px;
+            line-height: 18px;
+            color: #00b83a;
+            background-color: #fff;
+            padding: 0 5px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+/* .test {
+    font-weight: 700;
+    font-size: 700px;
+    color: rgb(90, 177, 234);
+    line-height: 0.16;
+    mix-blend-mode: overlay;
+    margin: 188px 0 0 0;
+    z-index: 1;
+}
+.test2 {
+    font-weight: 700;
+    font-size: 500px;
+    color: rgb(43, 135, 204);
+    line-height: 0.224;
+    z-index: 1;
+      
+} */
+
+/* .test-decor {
+    position: absolute;
+    top: 603px;
+    left: 22.7%;
+    z-index: 2;
+} */
+
+
+/* .cloud-decor {
+    position: absolute;
+    top: 649px;
+    left: 65.7%;
+    z-index: 2;
+} */
+

@@ -36,7 +36,6 @@ $container-max-widths: ( sm: 660px,md: 840px,lg: 1080px,xl: 1260px,xxl: 1440px);
 @include font('Acrom', normal, 400, '../fonts/Acrom-Regular.woff2');
 @include font('Acrom', normal, 500, '../fonts/Acrom-Medium.woff2');
 @include font('Acrom', normal, 700, '../fonts/Acrom-Bold.woff2');
-@include font('Acrom', normal, 700, '../fonts/Acrom-Bold.woff2');
 @include font('Acrom', normal, 900, '../fonts/Acrom-ExtraBold.woff2');
 @include font('AsapCondensedBold', normal, 900, '../fonts/AsapCondensed-Bold.woff2');
 

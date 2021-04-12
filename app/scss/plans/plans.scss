@@ -1,0 +1,29 @@
+.floor-map {
+    position: relative;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+}
+
+
+.entrance-1 {
+    &__room {
+        transition: all .3s ease-in-out;
+        opacity: 0.1;
+        &:hover {
+            fill: #00b83a !important;
+            opacity: .4 !important;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+

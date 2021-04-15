@@ -1,1 +1,0 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(){AOS.init();new Swiper(".apartment-slider",{loop:!0,slidesPerView:1,spaceBetween:30,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}})});

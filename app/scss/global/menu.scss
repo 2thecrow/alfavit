@@ -70,4 +70,73 @@
         padding: 10px 29px 8px 29px;
     }
 }
-  
+
+.burger {
+    cursor: pointer;
+    display: none;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    fill: rgba(255,101,41,.85);
+    .hide {
+        opacity: 0;
+        transition: opacity .25s ease-out;
+    }
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.1);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s;
+    }
+}
+.lock {
+	overflow: hidden;
+}
+.mobile-menu {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    transition: width .25s ease-out;
+    &__close {
+        display: inline-flex;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0 0 0 10px;
+        transition: all .3s ease-in-out;
+        svg {
+            flex: 0 0 24px;
+            width: 24px;
+            height: 24px;
+            fill: rgba(255,101,41,.85);
+            transition: all .3s ease-in-out;
+        }
+        &:hover {
+            svg {
+                fill: rgba(255,101,41,.75);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+    &.open {
+        width: 355px;
+        transition: width .25s ease-out;
+    }
+}

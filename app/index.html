@@ -9,14 +9,15 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="/img/favicon.png">
 	<meta property="og:image" content="images/dest/preview.jpg">
-	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="/js/aos-2/dist/aos.css">
 	<link rel="stylesheet" href="/js/swiperjs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/css/app.css">
 
 
 </head>
 
 <body>
+	<div class="overlay"></div>
 
 	<header class="header wrapper">
 		<div class="header__nav">
@@ -52,6 +53,36 @@
 						заказать звонок
 					</div>
 				</div>
+				<div class="burger">
+					<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+						<path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" /></svg>
+				</div>
+				<div class="mobile-menu">
+					<div class="mobile-menu__close" title="Закрыть меню">
+						<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z"/></svg>
+					</div>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/" class="nav__link">О проекте</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">Квартиры</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">Галерея</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">Как купить</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">Коммерция</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">О застройщике</a>
+						</li>
+					</ul>
+				</div>
+
 			</nav>
 		</div>
 		<div class="header__container">
@@ -115,33 +146,34 @@
 	<div class="apartment">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-xl-3">
+				<div class="col-12 col-xl-4">
 					<div class="apartment__description">
 						<h2>Квартиры </h2>
 						<p>
-							Эргономичные планировки квартир продуманы специально для жизни семьи. Эргономичные планировки продуманы 
-							для семьи. 
+							Эргономичные планировки квартир продуманы специально для жизни семьи. Эргономичные планировки продуманы
+							для семьи.
 						</p>
 						<div class="floor-switch">
+
 
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-xl-9">
+				<div class="col-12 col-xl-8">
 					<div class="apartment__map">
 						<div class="floor-map">
 							<img src="/img/dest/plans/entrance_1_plan.png" alt="Floor 1">
 							<svg viewbox="0 0 931 562">
 								<!-- Room 1 -->
-								<path class="entrance-1__room entrance1__room-1" d="m 353.03358,300.8565 h 56.50778 v -5.22416 h 32.81642 v 5.97524 H 567.64823 V 504.5762 h -39.92981 v 14.701 h 41.35249 v 38.2226 H 463.88763 v -38.31744 h 41.54218 V 504.86074 H 353.30184 Z" fill="#fff"></path>
+								<path class="entrance-1__room entrance1__room-1" id="room1_1" d="m 353.03358,300.8565 h 56.50778 v -5.22416 h 32.81642 v 5.97524 H 567.64823 V 504.5762 h -39.92981 v 14.701 h 41.35249 v 38.2226 H 463.88763 v -38.31744 h 41.54218 V 504.86074 H 353.30184 Z" fill="#fff"></path>
 								<!-- Room 1a -->
-								<path class="entrance-1__room entrance1__room-1a" d="m 574.85646,301.27562 h 104.47193 v -5.78555 h 32.01024 v 6.11751 h 77.62167 v 246.18464 h -98.58651 v -43.05614 h -51.64055 v 14.08378 h 35.81306 v 38.89808 H 573.00891 v -38.49568 h 43.19028 v -14.88858 h -41.31244 z" fill="#fff"></path>
+								<path class="entrance-1__room entrance1__room-1a" id="room1_1a" d="m 574.85646,301.27562 h 104.47193 v -5.78555 h 32.01024 v 6.11751 h 77.62167 v 246.18464 h -98.58651 v -43.05614 h -51.64055 v 14.08378 h 35.81306 v 38.89808 H 573.00891 v -38.49568 h 43.19028 v -14.88858 h -41.31244 z" fill="#fff"></path>
 								<!-- Room 2 -->
-								<path class="entrance-1__room entrance1__room-2" d="M 15.290968,252.8375 V 58.749509 H 57.274065 V 45.336379 H 14.888574 V 6.505368 H 116.75438 V 45.525672 H 80.144153 V 58.898839 H 122.82447 V 200.72749 h 8.06184 V 15.83914 h 214.60238 v 183.54704 h 7.34369 v 32.72803 h -7.27662 v 20.31616 H 131.44867 v -10.6587 h -8.51733 v 10.86463 z" fill="#fff"></path>
+								<path class="entrance-1__room entrance1__room-2" id="room1_2" d="M 15.290968,252.8375 V 58.749509 H 57.274065 V 45.336379 H 14.888574 V 6.505368 H 116.75438 V 45.525672 H 80.144153 V 58.898839 H 122.82447 V 200.72749 h 8.06184 V 15.83914 h 214.60238 v 183.54704 h 7.34369 v 32.72803 h -7.27662 v 20.31616 H 131.44867 v -10.6587 h -8.51733 v 10.86463 z" fill="#fff"></path>
 								<!-- Room 2a -->
-								<path class="entrance-1__room entrance1__room-2a" d="M 14.700998,465.09691 V 258.73928 H 123.40079 v 7.77961 h 7.77962 v -7.78132 h 215.01247 v 2.41607 h 6.45325 v 32.25858 h -7.1239 V 504.76589 H 195.38101 v 14.79585 h 36.79992 V 557.9862 H 131.076 v -38.80384 h 42.30094 V 504.95558 H 131.076 V 317.25703 h -7.20823 v 147.48421 z" fill="#fff"></path>
+								<path class="entrance-1__room entrance1__room-2a" id="room1_2a" d="M 14.700998,465.09691 V 258.73928 H 123.40079 v 7.77961 h 7.77962 v -7.78132 h 215.01247 v 2.41607 h 6.45325 v 32.25858 h -7.1239 V 504.76589 H 195.38101 v 14.79585 h 36.79992 V 557.9862 H 131.076 v -38.80384 h 42.30094 V 504.95558 H 131.076 V 317.25703 h -7.20823 v 147.48421 z" fill="#fff"></path>
 								<!-- Room 2b -->
-								<path class="entrance-1__room entrance1__room-2b" d="M 905.29697,464.52784 H 797.34351 V 301.52716 h 12.13888 v -8.11494 h -78.19855 v -14.95564 c 0,0 -9.52332,2.81675 -9.52332,0 0,-2.81676 0,-32.72804 0,-32.72804 h 10.05985 V 228.55973 H 667.37028 V 15.744295 h 108.27336 v 42.490628 h 63.54625 V 45.525672 H 788.92196 V 8.5360636 H 906.45932 V 45.47051 h -45.87291 v 13.949655 h 45.60464 V 293.85399 h -67.57023 v 7.46905 h 66.86584 z" fill="#fff"></path>
+								<path class="entrance-1__room entrance1__room-2b" id="room1_2b" d="M 905.29697,464.52784 H 797.34351 V 301.52716 h 12.13888 v -8.11494 h -78.19855 v -14.95564 c 0,0 -9.52332,2.81675 -9.52332,0 0,-2.81676 0,-32.72804 0,-32.72804 h 10.05985 V 228.55973 H 667.37028 V 15.744295 h 108.27336 v 42.490628 h 63.54625 V 45.525672 H 788.92196 V 8.5360636 H 906.45932 V 45.47051 h -45.87291 v 13.949655 h 45.60464 V 293.85399 h -67.57023 v 7.46905 h 66.86584 z" fill="#fff"></path>
 							</svg>
 						</div>
 					</div>
@@ -149,39 +181,146 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-6	">
+				<div class="col-xl-8">
 					<!-- Slider main container -->
-					<div>
+					<div class="apartment-slider__wrapper">
 						<div class="swiper-container apartment-slider">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">Slide 1</div>
-							<div class="swiper-slide">Slide 2</div>
-							<div class="swiper-slide">Slide 3</div>
-							
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="apartment-slider__item">
+										<div class="apartment-slider__plan">
+											<div class="apartment-slider__image">
+												<img class="" src="/img/dest/plans/room-2a.png" alt="Picture Room 2a">
+											</div>
+											<div class="apartment-slider__tips">
+												<div class="apartment-slider__tips-icon">
+													<img src="/img/dest/slider/small-family-tips.png" alt="Small family tips">
+												</div>
+												<div class="apartment-slider__tips-text">
+													Отлично подойдет для небольшой семьи с питомцами. Просторная гостиная 16,34 м2, большой коридор, раздельный санузел.
+												</div>
+											</div>
+										</div>
+										<div class="apartment-slider__content">
+											<div class="apartment-slider__title">Двухкомнатная квартира, тип 1</div>
+											<ul class="apartment-slider__description slide-description">
+												<li class="slide-description__item">
+													<div class="slide-description__title">Количество комнат</div>
+													<div class="slide-description__params">2</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Общая площадь</div>
+													<div class="slide-description__params">76,29 м<sup>2</sup></div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Жилая площадь</div>
+													<div class="slide-description__params">41,25 м<sup>2</sup></div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Высота потолка</div>
+													<div class="slide-description__params">2.70 м</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Этажность</div>
+													<div class="slide-description__params">12/14 эт</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Срок сдачи</div>
+													<div class="slide-description__params">2 кв. 2022 г.</div>
+												</li>
+											</ul>
+											<div class="apartment-slider__btn primary-btn primary-btn__flamingo">Узнать стоимость</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="apartment-slider__item">
+										<div class="apartment-slider__plan">
+											<div class="apartment-slider__image">
+												<img class="" src="/img/dest/plans/room-2a.png" alt="Picture Room 2a">
+											</div>
+											<div class="apartment-slider__tips">
+												<div class="apartment-slider__tips-icon">
+													<img src="/img/dest/slider/small-family-tips.png" alt="Small family tips">
+												</div>
+												<div class="apartment-slider__tips-text">
+													Отлично подойдет для небольшой семьи с питомцами. Просторная гостиная 16,34 м2, большой коридор, раздельный санузел.
+												</div>
+											</div>
+										</div>
+										<div class="apartment-slider__content">
+											<div class="apartment-slider__title">Двухкомнатная квартира, тип 1А</div>
+											<ul class="apartment-slider__description slide-description">
+												<li class="slide-description__item">
+													<div class="slide-description__title">Количество комнат</div>
+													<div class="slide-description__params">2</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Общая площадь</div>
+													<div class="slide-description__params">76,29 м<sup>2</sup></div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Жилая площадь</div>
+													<div class="slide-description__params">41,25 м<sup>2</sup></div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Высота потолка</div>
+													<div class="slide-description__params">2.70 м</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Этажность</div>
+													<div class="slide-description__params">12/14 эт</div>
+												</li>
+												<li class="slide-description__item">
+													<div class="slide-description__title">Срок сдачи</div>
+													<div class="slide-description__params">2 кв. 2022 г.</div>
+												</li>
+											</ul>
+											<div class="apartment-slider__btn primary-btn primary-btn__flamingo">Узнать стоимость</div>
+										</div>
+									</div>
+								</div>
+
+
 							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination"></div>
-						
+
 							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-						
-							<!-- If we need scrollbar -->
-							<div class="swiper-scrollbar"></div>
+							<div class="apartment-slider__nav">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+							
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
-	
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2">
+						<div class="footer__logo">
+							<img src="/img/dest/footer/footer-logo.png" alt="Footer logo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<script src="/js/swiperjs/swiper-bundle.min.js"></script>
-	<script src="/js/app.js"></script>
 	<script src="/js/aos-2/dist/aos.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="/js/app.min.js"></script>
 
 </body>
 

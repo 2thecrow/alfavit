@@ -1,0 +1,39 @@
+@media screen and (max-width: 1250px) {
+    .nav {
+        justify-content: flex-end;
+        &__list {
+            display: none;
+        }
+    }
+    .burger {
+        display: flex;
+        margin: 0 0 0 30px;
+    }
+    .mobile-menu {
+        .nav {
+            &__list {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 20px;
+                margin: 0;
+            }
+            &__link {
+                color:#414343;
+                &:hover {
+                    text-decoration: underline;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1450px) {
+    .header__logo {
+        flex: 0 0 168px;
+    }
+    .nav {
+        padding: 0 24px;
+    }
+}

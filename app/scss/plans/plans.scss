@@ -18,6 +18,12 @@
     &__room {
         transition: all .3s ease-in-out;
         opacity: 0.1;
+        &.active {
+            fill: #00b83a !important;
+            opacity: .4 !important;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
         &:hover {
             fill: #00b83a !important;
             opacity: .4 !important;

@@ -38,7 +38,7 @@ let paths = {
 	},
 
 	cssOutputName: 'app.css',
-	jsOutputName:  'apps.js',
+	jsOutputName:  'app.min.js',
 
 }
 
@@ -93,7 +93,7 @@ function scripts() {
 		baseDir + '/js/_tmp/userscripts.tmp.js'
 	])
 	.pipe(concat(paths.jsOutputName))
-	.pipe(uglify())
+	/* .pipe(uglify()) */
 	.pipe(dest(baseDir + '/js'))
 }
 

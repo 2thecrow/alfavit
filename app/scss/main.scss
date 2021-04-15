@@ -4,5 +4,10 @@
 @import 'global/global'; // some global styles
 @import 'global/menu'; // global header menu
 @import 'welcome/header'; // welcome header
+
 @import 'welcome/apartment.scss'; /* Apartment block */
 @import 'plans/plans'; /* Floors plans */
+
+@import 'welcome/footer'; // welcome header
+
+@import 'media'; //media query

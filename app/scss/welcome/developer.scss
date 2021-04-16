@@ -1,0 +1,28 @@
+.developer {
+    &__logo {
+
+    }
+    &__about {
+
+    }
+    &__statistics {
+
+    }
+}
+
+.developer-stats {
+    display: flex;
+    &__item {
+        font-weight: 900;
+    }
+    &__count {
+        font-size: 120px;
+        line-height: 122px;
+        letter-spacing: -0.08em;
+        color: #ff5829;
+    }
+    &__description {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

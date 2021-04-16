@@ -5767,6 +5767,24 @@ body {
   line-height: 26px;
   margin: 40px 0 0 0
 }
+.developer-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.developer-stats__item {
+  font-weight: 900
+}
+.developer-stats__count {
+  font-size: 120px;
+  line-height: 122px;
+  letter-spacing: -.08em;
+  color: #ff5829
+}
+.developer-stats__description {
+  font-size: 13px;
+  line-height: 16px
+}
 .footer {
   position: relative
 }

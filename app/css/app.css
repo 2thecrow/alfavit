@@ -5102,6 +5102,12 @@ body {
   line-height: 64px;
   letter-spacing: -.024em
 }
+.section__sub-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 64px;
+  letter-spacing: -.024em
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5719,6 +5725,47 @@ body {
   font-size: 24px;
   line-height: 32px;
   padding: 47px 47px
+}
+.universal-location {
+  padding: 0 0 130px 0
+}
+.universal-location .section__sub-title {
+  margin: 0 0 25px 0
+}
+.universal-location__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px
+}
+.universal-location__item {
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 50px 40px 50px 50px;
+  -webkit-box-shadow: 0 24px 56px 0 rgba(182,182,168,.16);
+  box-shadow: 0 24px 56px 0 rgba(182,182,168,.16)
+}
+.universal-location__icon {
+  margin: 0 0 25px 0
+}
+.universal-location .universal-location-big {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3
+}
+.universal-location .universal-location-big__title {
+  font-weight: 900
+}
+.universal-location .universal-location-big__sub-title {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 40px 0 0 0
 }
 .footer {
   position: relative

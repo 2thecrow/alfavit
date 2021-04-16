@@ -5096,6 +5096,12 @@ body {
   background-color: rgba(255,88,41,.8);
   border-bottom: 6px solid rgba(218,82,43,.8)
 }
+.section__title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -.024em
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5671,6 +5677,48 @@ body {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out
+}
+.advantages .section__title {
+  margin: 0 0 50px 0
+}
+.advantage-card__image {
+  position: relative;
+  border-radius: 4px
+}
+.advantage-card__image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.advantage-card__icon {
+  position: absolute;
+  left: 50px;
+  bottom: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fbfbf7
+}
+.advantage-card__icon img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.advantage-card__description {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 47px 47px
 }
 .footer {
   position: relative

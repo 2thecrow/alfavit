@@ -1,13 +1,14 @@
 @import 'config'; // start config
 
 // CUSTOM USER STYLES & IMPORTS
-@import 'global/global'; // some global styles
-@import 'global/menu'; // global header menu
+@import 'global/global'; // global styles
+@import 'global/menu'; // header menu
 @import 'welcome/header'; // welcome header
 
 @import 'welcome/apartment.scss'; /* Apartment block */
 @import 'plans/plans'; /* Floors plans */
+@import 'welcome/advantages'; /* Advantages section*/
 
-@import 'welcome/footer'; // welcome header
+@import 'welcome/footer'; // footer
 
 @import 'media'; //media query

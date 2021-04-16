@@ -1,0 +1,44 @@
+.advantages {
+    .section {
+        &__title {
+            margin: 0 0 50px 0;
+        }
+    }
+    &__card {
+
+    }
+}
+
+.advantage-card {
+    &__image {
+        position: relative;
+        border-radius: 4px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &__icon {
+        position: absolute;
+        left: 50px;
+        bottom: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #fbfbf7;
+        img {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &__description {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 47px 47px;
+    }
+}

@@ -5872,7 +5872,7 @@ body {
   color: #00b83a
 }
 .infrastructure-card__steps-icon {
-  margin: 0 15px 0 0
+  margin: -3px 15px 0 0
 }
 .infrastructure-card__icons {
   display: -webkit-box;
@@ -5932,6 +5932,75 @@ body {
   font-size: 20px;
   line-height: 26px;
   margin: 40px 0 0 0
+}
+.buying-steps__wrapper {
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(/img/dest/buying-steps/buying-steps-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  padding: 90px 0;
+  margin: 0 auto
+}
+.buying-step {
+  background-repeat: no-repeat;
+  padding: 20px 0 40px
+}
+.buying-step__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #00b83a;
+  margin: 0 0 25px 0
+}
+.buying-step__letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  font-weight: 900;
+  font-family: Arial;
+  font-size: 48px;
+  line-height: 36px;
+  padding: 20px;
+  border: 2px solid #00b83a;
+  border-radius: 50%;
+  margin: 0 20px 0 0
+}
+.buying-step__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px
+}
+.buying-step__description {
+  font-size: 15px;
+  line-height: 24px
+}
+.buying-step__1 {
+  background-image: url(/img/dest/buying-steps/step-1__bg.png);
+  background-position: 20% 100%
+}
+.buying-step__2 {
+  background-image: url(/img/dest/buying-steps/step-2__bg.png);
+  background-position: 10% 50%
+}
+.buying-step__3 {
+  background-image: url(/img/dest/buying-steps/step-3__bg.png);
+  background-position: 0 100%
+}
+.buying-step__4 {
+  background-image: url(/img/dest/buying-steps/step-4__bg.png);
+  background-position: 10% 100%
 }
 .contacts {
   position: relative;
@@ -6189,6 +6258,12 @@ body {
   transform: rotate(45deg)
 }
 .contact-form__data-save label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   cursor: pointer;
   font-family: Arial;

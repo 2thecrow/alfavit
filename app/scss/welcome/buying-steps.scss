@@ -1,0 +1,63 @@
+.buying-steps {
+    &__wrapper {
+        max-width: 1920px;
+        width: 100%;
+        background-image: url(/img/dest/buying-steps/buying-steps-bg.png);
+        background-repeat: no-repeat;
+        background-position: 50% 80%;;
+        padding: 90px 0;
+        margin: 0 auto;
+    }
+}
+
+.buying-step {
+    background-repeat: no-repeat;
+    padding: 20px 0 40px;
+    &__count {
+        display: flex;
+        align-items: center;
+        color: #00b83a;
+        margin: 0 0 25px 0;
+    }
+    &__letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        height: 66px;
+        font-weight: 900;
+        font-family: Arial;
+        font-size: 48px;
+        line-height: 36px;
+        padding: 20px;
+        border: 2px solid #00b83a;
+        border-radius: 50%;
+        margin: 0 20px 0 0;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    &__1 {
+        background-image: url(/img/dest/buying-steps/step-1__bg.png);
+        background-position: 20% 100%;;
+    }
+    &__2 {
+        background-image: url(/img/dest/buying-steps/step-2__bg.png);
+        background-position: 10% 50%;
+    }
+    &__3 {
+        background-image: url(/img/dest/buying-steps/step-3__bg.png);
+        background-position: 0 100%;
+    }
+    &__4 {
+        background-image: url(/img/dest/buying-steps/step-4__bg.png);
+        background-position: 10% 100%;
+    }
+}

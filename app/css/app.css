@@ -5786,6 +5786,112 @@ body {
   line-height: 32px;
   padding: 47px 47px
 }
+.infrastructure__wrapper {
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(/img/dest/infrastructure/infrastructure-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 155px 0 128px;
+  margin: 0 auto
+}
+.infrastructure .section__title {
+  margin: 0 0 26px 0
+}
+.infrastructure__description {
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 0 62px 0
+}
+.more-map {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 57px 0
+}
+.more-map__icon {
+  margin: 0 7px 0 0
+}
+.more-map__link {
+  position: relative;
+  display: block;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ff5829;
+  text-transform: uppercase;
+  text-decoration: none
+}
+.more-map__link::before {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  content: '';
+  border-bottom: 1px dotted #ff5829
+}
+.more-map__link:hover {
+  color: #e64f25
+}
+.infrastructure-card {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  padding: 23px 25px 50px 47px;
+  margin: 0 0 30px 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 24px 56px 0 rgba(182,182,168,.16);
+  box-shadow: 0 24px 56px 0 rgba(182,182,168,.16)
+}
+.infrastructure-card__content {
+  padding: 20px 0 0 0
+}
+.infrastructure-card__title {
+  max-width: 275px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -.024em;
+  margin: 0 0 20px 0
+}
+.infrastructure-card__description {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 0 21px 0
+}
+.infrastructure-card__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00b83a
+}
+.infrastructure-card__steps-icon {
+  margin: 0 15px 0 0
+}
+.infrastructure-card__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.infrastructure-card__icon--factory {
+  margin: 20px 0 25px 0
+}
+.infrastructure-card__icon--bus {
+  margin: 20px 0 0 0
+}
 .universal-location {
   padding: 0 0 130px 0
 }

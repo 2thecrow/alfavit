@@ -1,28 +1,93 @@
 .developer {
+    .section {
+        &__title {
+            margin: 0 0 60px 0;
+        }
+    }
     &__logo {
-
+        margin: 0 0 30px 0;
     }
     &__about {
-
+        font-size: 15px;
+        line-height: 26px;
     }
     &__statistics {
 
+    }
+    &__card {
+
+    }
+    &__card-list {
+        padding: 60px 0 90px 0;
+        .col {
+            margin: 0 0 30px 0;
+        }
     }
 }
 
 .developer-stats {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-image: url(/img/dest/developer/developer-stats-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 111px 60px 93px;
     &__item {
         font-weight: 900;
+        padding: 0 15px;
     }
     &__count {
         font-size: 120px;
         line-height: 122px;
         letter-spacing: -0.08em;
-        color: #ff5829;
+        color: rgba(255, 88, 41, 1);
+        margin: 0 0 0 -5px;
     }
     &__description {
+        max-width: 190px;
         font-size: 13px;
         line-height: 16px;
+        text-transform: uppercase;
     }
 }
+
+
+.developer-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 24px 56px 0px rgba(182, 182, 168, 0.16);
+    padding: 48px 50px 24px 47px;
+    &__title {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -0.024em;
+        margin: 0 0 15px 0;
+    }
+    &__description {
+        flex: 1 1 auto;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &__list {
+        list-style: none; /* Remove default bullets */
+        line-height: 32px;
+        padding-left: 16px;
+        margin: 0;
+        li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: #00b83a; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+    }
+}
+  

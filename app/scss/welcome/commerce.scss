@@ -1,0 +1,127 @@
+.commerce {
+    .section__title {
+        margin: 0 0 50px 0;
+    }
+    &__statistics {
+
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0 0 56px 0;
+        sup {
+            font-size: .6em;
+        }
+    }
+    &__description--bold {
+        font-weight: 700;
+    }
+    &__tab-switch {
+        display: flex;
+    }
+    &__tab-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__tab-item--1 {
+        display: block;
+        width: 169px;
+        height: 104px;
+        background-image: url(/img/dest/plans/entrance-1__icon--white.png);
+        &.commerce__tab-item--active {
+            background-image: url(/img/dest/plans/entrance-1__icon--green.png);
+        }
+    }
+    &__tab-item--2 {
+        display: block;
+        width: 160px;
+        height: 104px;
+        background-image: url(/img/dest/plans/entrance-2__icon--white.png);
+        &.commerce__tab-item--active {
+            background-image: url(/img/dest/plans/entrance-2__icon--green.png);
+        }
+    }
+    &__tab-item--active {
+        color: red;
+    }
+    &__content {
+        
+    }
+    &__tab-content {
+        display: none;
+        &.faded {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    
+        &.faded.in {
+            opacity: 1;
+            transition: opacity 0.5 s;
+        }
+    }
+    &__tab-content--active {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__plan {
+        position: relative;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+
+        }
+    }
+    &__office {
+        cursor: pointer;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        &-disabled {
+            cursor: default !important;
+            fill: #ff5829 !important;
+            opacity: .4;
+            transition: all .3s ease-in-out;
+            &:hover {
+                cursor: normal;
+                fill: #ff5829;
+                opacity: .4;
+                transition: all .3s ease-in-out;
+            }
+        }
+        &:hover {
+            fill: #00b83a;
+            opacity: .4;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.commerce-statistic {
+    display: flex;
+    margin: 0 0 35px 0;
+    &__header {
+        display: flex;
+        flex-direction: column;
+    }
+    &__icon {
+        margin: 0 19px 0 0;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 35px;
+        margin: 0 0 12px 0;
+        sup {
+            font-size: .6em;
+            top: -.5em;
+        }
+    }
+    &__description {
+        max-width: 350px;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}

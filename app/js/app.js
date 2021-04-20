@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  AOS.init();
+  /* AOS.init(); */ //init animation lib
 
   /* Hamburher menu */
   const menu = document.querySelector('.mobile-menu'); /* Aside menu */
@@ -68,6 +68,28 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#room1_1a').click(function () {
     ApartSlider.slideTo(1, 1000, false);
   })
+
+
+  /* Commerce tabs handler */
+  $('.commerce__tab-item').click(function (e) {
+    e.preventDefault();
+
+    $('.commerce__tab-item').removeClass('commerce__tab-item--active');
+    $('.commerce__tab-content').removeClass('commerce__tab-content--active').removeClass('in');
+
+    
+    var href = $(this).attr('href');
+
+    $(this).addClass('commerce__tab-item--active');
+    $(href).addClass('commerce__tab-content--active');
+
+	  setTimeout(function () {
+        $(href).addClass('in');
+    }, 200);
+  });
+
+  /* Init first commerce tab */
+  $('.commerce__tab-item:first').click();
 
 
 

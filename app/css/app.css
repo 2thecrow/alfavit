@@ -5161,6 +5161,60 @@ body {
 .socials__link--facebook:hover {
   background-image: url(/img/dest/footer/facebook__white-icon.png)
 }
+.custom-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer
+}
+.custom-checkbox input:checked + label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5.5px;
+  width: 5px;
+  height: 8px;
+  border: solid #afada5;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.custom-checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: Arial;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: .032em;
+  color: #afada5
+}
+.custom-checkbox label::before {
+  content: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #afada5;
+  border-radius: 3px;
+  padding: 6px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5892,6 +5946,188 @@ body {
 .infrastructure-card__icon--bus {
   margin: 20px 0 0 0
 }
+.how-buy-apartment {
+  padding: 90px 0
+}
+.how-buy-apartment .section__title {
+  margin: 0 0 50px 0
+}
+.how-buy-apartment__tab--active {
+  color: red
+}
+.how-buy-apartment__tab-content {
+  display: none
+}
+.how-buy-apartment__tab-content--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff
+}
+.buy-apartment__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #f7f7f2;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0
+}
+.buy-apartment__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.buy-apartment__tab {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #00b83a;
+  padding: 24px 52px;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-decoration: none
+}
+.buy-apartment__tab:hover {
+  color: #00b83a;
+  background-color: rgba(255,255,255,.5)
+}
+.buy-apartment__tab--active {
+  color: #afada5;
+  background-color: #fff
+}
+.buy-apartment__tab--active:hover {
+  color: #afada5;
+  background-color: #fff
+}
+.buy-apartment__tab--active .buy-apartment__tab-link::before {
+  display: none
+}
+.buy-apartment__tab-link {
+  position: relative
+}
+.buy-apartment__tab-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #00b83a
+}
+.buy-apartment__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 26px;
+  color: #afada5;
+  margin: 0 50px 0 0
+}
+.buy-apartment__phone a {
+  color: #414343;
+  text-decoration: none
+}
+.buy-apartment__phone a:hover {
+  text-decoration: underline
+}
+.buy-apartment__tab-content {
+  background-color: #fff;
+  padding: 50px 50px;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: none;
+  -webkit-box-shadow: 0 24px 56px 0 rgba(182,182,168,.16);
+  box-shadow: 0 24px 56px 0 rgba(182,182,168,.16)
+}
+.buy-apartment__tab-content--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff
+}
+.buy-apartment-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%
+}
+.buy-apartment-card__description {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 50px 0 0
+}
+.buy-apartment-card__content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 380px;
+  flex: 0 0 380px
+}
+.buy-apartment-card__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.buy-apartment-card__submit-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+.apart-card-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.banks {
+  background-image: url(/img/dest/how-to-buy-apartment/banks-list-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 50px 50px 50px
+}
+.banks__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #afada5;
+  margin: 0 0 27px 0
+}
+.banks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+.banks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 20px;
+  margin: 0 30px 30px 0
+}
+.banks__item:last-child {
+  margin: 0 0 30px 0
+}
 .commerce {
   padding: 65px 0
 }
@@ -6381,60 +6617,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
-}
-.contact-form__data-save input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer
-}
-.contact-form__data-save input:checked + label::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 5.5px;
-  width: 5px;
-  height: 8px;
-  border: solid #afada5;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg)
-}
-.contact-form__data-save label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  font-family: Arial;
-  font-style: italic;
-  font-size: 11px;
-  line-height: 12px;
-  letter-spacing: .032em;
-  color: #afada5
-}
-.contact-form__data-save label::before {
-  content: '';
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid #afada5;
-  border-radius: 3px;
-  padding: 6px;
-  background-color: #fff;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-right: 5px
 }
 .contact-form__submit {
   display: -webkit-inline-box;

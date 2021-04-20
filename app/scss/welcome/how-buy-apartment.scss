@@ -1,0 +1,219 @@
+.how-buy-apartment {
+    padding: 90px 0;
+    .section__title {
+        margin: 0 0 50px 0;
+    }
+    &__header {
+
+    }
+    &__tabs {
+
+    }
+    &__tab {
+
+    }
+    &__tab--active {
+        color: red;
+    }
+    &__tab-link {
+
+    }
+    &__phone {
+
+    }
+    &__content {
+
+    }
+    &__tab-content {
+        display: none;
+    }
+    &__tab-content--active {
+        display: flex;
+        background-color: #fff;
+    }
+    &__card {
+
+    }
+}
+
+.buy-apartment {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f7f7f2;
+        border-radius: 3px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    &__tabs {
+        display: flex;
+    }
+    &__tab {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #00b83a;
+        padding: 24px 52px;
+        border-radius: 3px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        text-decoration: none;
+        &:hover {
+            color: #00b83a;
+            background-color: rgba(255, 255, 255, .5);
+        }
+    }
+    &__tab--active {
+        color: #afada5;
+        background-color: #fff;
+        &:hover {
+            color: #afada5;
+            background-color: #fff;
+        }
+        .buy-apartment__tab-link {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    &__tab-link {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed #00b83a;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 26px;
+        color: #afada5;
+        margin: 0 50px 0 0;
+        a {
+            color: #414343;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__content {
+
+    }
+    &__tab-content {
+        background-color: rgb(255, 255, 255);
+        padding: 50px 50px;
+        border-radius: 3px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: none;
+        box-shadow: 0px 24px 56px 0px rgba(182, 182, 168, 0.16);
+    }
+    &__tab-content--active {
+        display: flex;
+        background-color: #fff;
+    }
+    &__card {
+
+    }
+}
+
+.buy-apartment-card {
+    display: flex;
+    width: 100%;
+    &__description {
+        flex-shrink: 1;
+        flex-grow: 1;
+        margin: 0 50px 0 0;
+    }
+    &__content {
+        flex: 0 0 380px;
+    }
+    &__title {
+
+    }
+    &__form {
+
+    }
+    &__field {
+
+    }
+    &__input {
+
+    }
+    &__submit {
+        display: flex;
+        align-items: center;
+    }
+    &__submit-btn {
+        display: inline-flex;
+    }
+    &__checkbox {
+
+    }
+}
+
+.apart-card-desc {
+    display: flex;
+    &__list {
+
+    }
+    &__item {
+
+    }
+    &__title {
+
+    }
+    &__number {
+
+    }
+    &__count {
+
+    }
+    &__percent {
+
+    }
+    &__rub {
+
+    }
+    &__years {
+
+    }
+}
+
+
+.banks {
+    background-image: url(/img/dest/how-to-buy-apartment/banks-list-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 50px 50px 50px;
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+        color: #afada5;
+        margin: 0 0 27px 0;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px 20px;
+        margin: 0 30px 30px 0;
+        &:last-child {
+            margin: 0 0 30px 0;
+        }
+    }
+}

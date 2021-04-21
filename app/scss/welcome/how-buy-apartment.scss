@@ -133,19 +133,50 @@
         margin: 0 50px 0 0;
     }
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex: 0 0 380px;
     }
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        a { 
+            position: relative;
+            display: inline-flex;
+            font-weight: 900;
+            color: #414343;
+            text-decoration-style: dotted;
+            &:hover {
+                color: #202121;
+            }
+        }
+    }
     &__title {
-
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.036em;
+        margin: 0 0 30px 0;
     }
     &__form {
 
     }
     &__field {
-
+        
     }
     &__input {
-
+        width: 100%;
+        font-size: 300px;
+        font-size: 15px;
+        line-height: 36px;
+        background-color: #f7f7f2;
+        padding: 10px 24px;
+        border: none;
+        margin: 0 0 32px 0;
+        &::placeholder {
+            color: #afada5;
+        }
     }
     &__submit {
         display: flex;
@@ -153,37 +184,90 @@
     }
     &__submit-btn {
         display: inline-flex;
+        padding: 10px 53px;
+        
     }
     &__checkbox {
-
+        margin: 0 0 0 20px;
+        &.custom-checkbox {
+            input:checked + label::after {
+                top: 2px;
+                left: 9px;
+            }
+            &.custom-checkbox label {
+                font-size: 10px;
+            }
+        }
+        
     }
 }
 
 .apart-card-desc {
     display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 115px 65px 18px;
     &__list {
-
+        max-width: 750px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
     &__item {
-
+        color: #fff;
+        flex: 0 0 35%;
+        margin: 0 0 60px 0;
     }
     &__title {
-
+        max-width: 150px;
+        font-weight: 900;
+        font-size: 13px;
+        text-transform: uppercase;
     }
     &__number {
-
+        display: flex;
+        margin: 0 0 0 -12px;
     }
     &__count {
-
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 95px;
+        letter-spacing: -0.08em;
     }
     &__percent {
-
+        display: flex;
+        align-items: flex-start;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.08em;
     }
     &__rub {
-
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 0 0 0 10px;
     }
     &__years {
-
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 0 0 0 10px;
+    }
+    &__ipoteka {
+        background-image: url(/img/dest/how-to-buy-apartment/ipoteka-bg.png);
+    }
+    &__part-pay{
+        background-image: url(/img/dest/how-to-buy-apartment/part-pay-bg.png);
+    }
+    &__trade-in {
+        background-image: url(/img/dest/how-to-buy-apartment/trade-in-bg.png);
     }
 }
 

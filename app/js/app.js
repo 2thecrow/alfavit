@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   /* End of Hamburher menu */
 
+  /* Apartments slider */
   const ApartSlider = new Swiper('.apartment-slider', {
     // Optional parameters
     /* loop: true, */
@@ -61,6 +62,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  const BigGallery = document.querySelectorAll('.big-gallery');
+  BigGallery.forEach((el) => {
+    let swiper = new Swiper(el, {
+      /* init slider when parant is hidden */
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+
+      // If we need pagination
+      pagination: {
+        el: '.custom-swiper-pagination',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+            ' из ' +
+            '<span class="' + totalClass + '"></span>';
+        },
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.big-gallery-button-next ',
+        prevEl: '.big-gallery-button-prev',
+      },
+    });
+  });
+
+  
+
   $('#room1_1').click(function () {
     ApartSlider.slideTo(0, 1000, false);
   })
@@ -69,6 +98,23 @@ document.addEventListener('DOMContentLoaded', () => {
     ApartSlider.slideTo(1, 1000, false);
   })
 
+  /* Gallery tabs handler */
+  $('.gallery-tabs__link').click(function (e) {
+    e.preventDefault();
+
+    $('.gallery-tabs__link').removeClass('gallery-tabs__link--active');
+    $('.gallery__tab').removeClass('gallery__tab--active');
+    
+    
+    var href = $(this).attr('href');
+    
+    $(this).addClass('gallery-tabs__link--active');
+    $(href).addClass('gallery__tab--active');
+
+  });
+
+  /* Init gallery tab */
+  $('.gallery-tabs__link:first').click();
 
   /* Commerce tabs handler */
   $('.commerce__tab-item').click(function (e) {

@@ -152,3 +152,20 @@
         }
     }
 }
+
+.custom-select {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    color: #afada5;
+    letter-spacing: -0.024em;
+    background-color: #f7f7f2;
+    padding: 17px 76px 17px 15px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+    appearance: none;
+    background-image: url(/img/dest/build-progress/select-down-icon.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+}
+  

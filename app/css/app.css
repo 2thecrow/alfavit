@@ -5215,6 +5215,23 @@ body {
   cursor: pointer;
   margin-right: 5px
 }
+.custom-select {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #afada5;
+  letter-spacing: -.024em;
+  background-color: #f7f7f2;
+  padding: 17px 76px 17px 15px;
+  border: 1px solid #f2f2f2;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(/img/dest/build-progress/select-down-icon.png);
+  background-repeat: no-repeat,repeat;
+  background-position: right .7em top 50%,0 0
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6621,13 +6638,17 @@ body {
 .build-progress .container {
   position: relative
 }
+.build-progress .section__title {
+  margin: 0
+}
 .build-progress__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between
+  justify-content: space-between;
+  margin: 0 0 43px 0
 }
 .build-progress .swiper-slide {
   -webkit-transition: all .3s ease-in-out;
@@ -6692,6 +6713,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0

@@ -5,11 +5,12 @@
     }
     padding: 60px 0 130px;
     .section__title {
-
+        margin: 0;
     }
     &__header {
         display: flex;
         justify-content: space-between;
+        margin: 0 0 43px 0;
     }
     &__nav {
 
@@ -62,6 +63,7 @@
     align-items: center;
     &__list {
         display: flex;
+        align-items: center;
         list-style: none;
         padding: 0;
         margin: 0;

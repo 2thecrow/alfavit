@@ -156,6 +156,57 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Init first how to buy tab */
   $('.buy-apartment__tab:first').click();
 
+  /* Build progress filter by years*/
+  $('.build-progress-nav').on( 'click', 'a', function() {
+    var filter = $(this).attr('data-filter');
+    
+    $( '.build-progress-nav__link' ).removeClass( 'build-progress-nav__link--active' );
 
+    $('.build-progress-slider .swiper-slide').css('display', 'none')
+    $('.build-progress-slider .swiper-slide' + filter).css('display', 'block')
+    /* $( '.build-progress-nav__link' ).removeClass( '.build-progress-nav__link--active' ); */
+    $(this).addClass('build-progress-nav__link--active');
+    
+    buildProgress.updateSize();
+    buildProgress.updateSlides();
+    buildProgress.updateSlidesClasses();
+    buildProgress.slideTo(0, 1000, false);
+    
+    return false;
+  });
 
-})
+  /* Build progress filter by month*/
+  $('#filter-month').on('change', function () {
+    
+    var sel = this.value;
+    console.log(sel);
+    
+    $('.build-progress-slider .swiper-slide').css('display', 'none')
+    $('.build-progress-slider .swiper-slide' + '.'+sel).css('display', '')
+
+    buildProgress.updateSize();
+    buildProgress.updateSlides();
+    buildProgress.updateSlidesClasses();
+    buildProgress.slideTo(0, 1000, false);
+
+    return false;
+  });
+  
+
+  /* Build progress slider init */
+  const buildProgress = new Swiper('.build-progress-slider', {
+    /*grabCursor: true,*/
+    observer: true,
+    slidesPerView: 3,
+    runCallbacksOnInit: true,
+    observer: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbarHide: false,
+    updateOnImagesReady: true
+  });
+  
+});

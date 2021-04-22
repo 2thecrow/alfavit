@@ -1,0 +1,119 @@
+.build-progress {
+    position: relative;
+    .container {
+        position: relative;
+    }
+    padding: 60px 0 130px;
+    .section__title {
+
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+
+    }
+    .swiper-slide {
+        transition: all .3s ease-in-out;
+        &.swiper-slide-next {
+            
+            transition: all .3s ease-in-out;
+        }
+        &.swiper-slide-prev {
+            appearance: none;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #ffffff;
+        transform: translateY(-10px);
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        left: -118px;
+        background-image: url(/img/dest/slider/arrow__left.png);
+        &.swiper-button-disabled {
+            background-color: #f7f7f2;
+            background-image: url(/img/dest/slider/arrow__left-disabled.png);
+        }
+    }
+    .swiper-button-next {
+        right: -118px;
+        background-image: url(/img/dest/slider/arrow__right.png);
+        &.swiper-button-disabled {
+            background-color: #f7f7f2;
+            background-image: url(/img/dest/slider/arrow__right-disabled.png);
+        }
+    }
+}
+
+.build-progress-nav {
+    display: flex;
+    align-items: center;
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin: 0 44px 0 0;
+        }
+    }
+    &__item_select {
+
+    }
+    &__link {
+        cursor: pointer;
+        position: relative;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        color: #00b83a;
+        text-decoration: none;
+        &:hover {
+            color: #afada5;
+            &::before {
+                border-bottom: 1px dotted #afada5;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            border-bottom: 1px dotted #00b83a;
+        }
+    }
+    &__link--active {
+        cursor: default;
+        color: #afada5;
+        &:hover {
+            color: #afada5;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.build-progress-slider {
+    /* overflow: visible; */
+    height: 400px;
+    &__slide {
+
+    }
+    
+}

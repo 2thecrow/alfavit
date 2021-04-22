@@ -1,6 +1,10 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 document.addEventListener('DOMContentLoaded', function () {
+  var _Swiper;
+
   /* AOS.init(); */
   //init animation lib
 
@@ -144,4 +148,44 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Init first how to buy tab */
 
   $('.buy-apartment__tab:first').click();
+  /* Build progress filter by years*/
+
+  $('.build-progress-nav').on('click', 'a', function () {
+    var filter = $(this).attr('data-filter');
+    $('.build-progress-nav__link').removeClass('build-progress-nav__link--active');
+    $('.build-progress-slider .swiper-slide').css('display', 'none');
+    $('.build-progress-slider .swiper-slide' + filter).css('display', 'block');
+    /* $( '.build-progress-nav__link' ).removeClass( '.build-progress-nav__link--active' ); */
+
+    $(this).addClass('build-progress-nav__link--active');
+    buildProgress.updateSize();
+    buildProgress.updateSlides();
+    buildProgress.updateSlidesClasses();
+    buildProgress.slideTo(0, 1000, false);
+    return false;
+  });
+  /* Build progress filter by month*/
+
+  $('#filter-month').on('change', function () {
+    var sel = this.value;
+    console.log(sel);
+    $('.build-progress-slider .swiper-slide').css('display', 'none');
+    $('.build-progress-slider .swiper-slide' + '.' + sel).css('display', '');
+    buildProgress.updateSize();
+    buildProgress.updateSlides();
+    buildProgress.updateSlidesClasses();
+    buildProgress.slideTo(0, 1000, false);
+    return false;
+  });
+  /* Build progress slider init */
+
+  var buildProgress = new Swiper('.build-progress-slider', (_Swiper = {
+    /*grabCursor: true,*/
+    observer: true,
+    slidesPerView: 3,
+    runCallbacksOnInit: true
+  }, _defineProperty(_Swiper, "observer", true), _defineProperty(_Swiper, "spaceBetween", 30), _defineProperty(_Swiper, "navigation", {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }), _defineProperty(_Swiper, "scrollbarHide", false), _defineProperty(_Swiper, "updateOnImagesReady", true), _Swiper));
 });

@@ -5811,6 +5811,111 @@ body {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out
 }
+.public-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.public-area__map {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 calc(62.6% - 15px);
+  flex: 0 calc(62.6% - 15px)
+}
+.public-area__map img {
+  width: 100%;
+  height: auto
+}
+.public-area__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 calc(37.4% - 15px);
+  flex: 0 calc(37.4% - 15px);
+  padding-right: calc((100% - 1410px)/ 2)
+}
+.public-area__description {
+  font-size: 15px;
+  line-height: 26px
+}
+.public-area__description p {
+  margin: 0 0 12px 0
+}
+.public-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 35px 0
+}
+.public-header__icon {
+  margin: 0 13px 0 0
+}
+.public-header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.public-header__title h2 {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  max-width: 200px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase
+}
+.public-header__title span {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 34px;
+  margin: 0 0 12px 0
+}
+.public-header__title span sup {
+  font-size: .65em
+}
+.area-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -.032em;
+  text-transform: uppercase;
+  margin: 45px 0 0 0
+}
+.area-nav__icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%
+}
+.area-nav__outside {
+  margin: 0 50px 0 0
+}
+.area-nav__outside .area-nav__icon {
+  background-color: #ff5829
+}
+.area-nav__inside .area-nav__icon {
+  background-color: #00b83a
+}
 .advantages .section__title {
   margin: 0 0 50px 0
 }

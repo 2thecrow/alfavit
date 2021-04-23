@@ -5242,7 +5242,7 @@ body {
   height: 104px;
   background-image: url(/img/dest/plans/entrance-1__icon--white.png)
 }
-.floor-switch__tab-item--1.commerce__tab-item--active {
+.floor-switch__tab-item--1.floor-switch__tab-item--active {
   background-image: url(/img/dest/plans/entrance-1__icon--green.png)
 }
 .floor-switch__tab-item--2 {
@@ -5251,7 +5251,7 @@ body {
   height: 104px;
   background-image: url(/img/dest/plans/entrance-2__icon--white.png)
 }
-.floor-switch__tab-item--2.commerce__tab-item--active {
+.floor-switch__tab-item--2.floor-switch__tab-item--active {
   background-image: url(/img/dest/plans/entrance-2__icon--green.png)
 }
 .nav {
@@ -5646,10 +5646,20 @@ body {
 .apartment__map {
   padding: 126px 0
 }
+.floor-map {
+  display: none
+}
+.floor-map_active {
+  display: block
+}
 .apartment-slider {
+  display: none;
   height: 570px;
   overflow: visible;
   margin: 0 0 130px 0
+}
+.apartment-slider__active {
+  display: block
 }
 .apartment-slider__item {
   display: -webkit-box;
@@ -5816,13 +5826,13 @@ body {
   left: 0;
   height: 100%
 }
-.entrance-1__room {
+.entrance__room {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: .1
 }
-.entrance-1__room.active {
+.entrance__room.active {
   fill: #00b83a!important;
   opacity: .4!important;
   cursor: pointer;
@@ -5830,7 +5840,7 @@ body {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out
 }
-.entrance-1__room:hover {
+.entrance__room:hover {
   fill: #00b83a!important;
   opacity: .4!important;
   cursor: pointer;

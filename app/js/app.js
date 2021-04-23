@@ -41,9 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* End of Hamburher menu */
 
   /* Apartments slider */
-  const ApartSlider = new Swiper('.apartment-slider', {
+  const ApartSlider = new Swiper('.apartment-slider__floor1', {
     // Optional parameters
-    /* loop: true, */
+    observer: true,
+    observeParents: true,
     slidesPerView: 1,
     spaceBetween: 30,
     speed: 600,
@@ -60,6 +61,61 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
   });
+
+  /* Apartment go to slide */
+  $('.entrance__room').click(function (e) {
+    var filter = $(this).data('slide');
+    ApartSlider.slideTo(filter, 1000, false);
+
+  });
+  
+  const ApartSlider2 = new Swiper('.apartment-slider__floor2', {
+    // Optional parameters
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 600,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+  /* Apartment go to slide */
+  $('.entrance__room').click(function (e) {
+    var filter = $(this).data('slide');
+    ApartSlider2.slideTo(filter, 1000, false);
+
+  });
+
+  /* Floor tabs  */
+  /* Floor 1 */
+  $('.floor-switch__tab-item--1').click(function () {
+    $('.floor-switch__tab-item--2').removeClass('floor-switch__tab-item--active');
+    $('.floor-map_2').removeClass('floor-map_active');
+    $('.apartment-slider__floor2').removeClass('apartment-slider__active')
+    $(this).addClass('floor-switch__tab-item--active');
+    $('.floor-map_1').addClass('floor-map_active');
+    $('.apartment-slider__floor1').addClass('apartment-slider__active')
+  });
+  /* Floor 2 */
+  $('.floor-switch__tab-item--2').click(function () {
+    $('.floor-switch__tab-item--1').removeClass('floor-switch__tab-item--active');
+    $('.floor-map_1').removeClass('floor-map_active');
+    $('.apartment-slider__floor1').removeClass('apartment-slider__active')
+    $(this).addClass('floor-switch__tab-item--active');
+    $('.floor-map_2').addClass('floor-map_active');
+    $('.apartment-slider__floor2').addClass('apartment-slider__active')
+  });
+  
 
 
   const BigGallery = document.querySelectorAll('.big-gallery');
@@ -88,16 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  
-
-  $('#room1_1').click(function () {
-    ApartSlider.slideTo(0, 1000, false);
-  })
-
-  $('#room1_1a').click(function () {
-    ApartSlider.slideTo(1, 1000, false);
-  })
-
   /* Gallery tabs handler */
   $('.gallery-tabs__link').click(function (e) {
     e.preventDefault();
@@ -120,13 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.commerce__tab-item').click(function (e) {
     e.preventDefault();
 
-    $('.commerce__tab-item').removeClass('commerce__tab-item--active');
+    $('.commerce__tab-item').removeClass('floor-switch__tab-item--active');
     $('.commerce__tab-content').removeClass('commerce__tab-content--active').removeClass('in');
 
     
     var href = $(this).attr('href');
 
-    $(this).addClass('commerce__tab-item--active');
+    $(this).addClass('floor-switch__tab-item--active');
     $(href).addClass('commerce__tab-content--active');
 
 	  setTimeout(function () {
@@ -195,17 +241,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Build progress slider init */
   const buildProgress = new Swiper('.build-progress-slider', {
-    /*grabCursor: true,*/
+    grabCursor: true,
     observer: true,
-    slidesPerView: 3,
     runCallbacksOnInit: true,
-    observer: true,
+    slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    scrollbarHide: false,
     updateOnImagesReady: true
   });
   

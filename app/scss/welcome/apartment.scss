@@ -25,10 +25,21 @@
     }
 }
 
+.floor-map {
+    display: none;
+    &_active {
+        display: block;
+    }
+}
+
 .apartment-slider {
+    display: none;
     height: 570px;
     overflow: visible;
     margin: 0 0 130px 0;
+    &__active {
+        display: block;
+    }
     &__item {
         display: flex;
         padding: 65px 55px 55px 73px;

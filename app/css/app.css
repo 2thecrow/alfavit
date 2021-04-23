@@ -5468,18 +5468,18 @@ body {
   line-height: 88px;
   color: #fff;
   letter-spacing: -.024em;
-  margin: 66px 0 15px 0
+  margin: 15px 0 25px 0
 }
 .header__sub-title {
   max-width: 650px;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 30px;
   color: #fff
 }
 .header__developer {
   position: relative;
   max-width: 205px;
-  margin: 212px 0 0 0
+  margin: 206px 0 0 0
 }
 .header-developer__logo {
   display: block;
@@ -5820,6 +5820,7 @@ body {
   justify-content: space-between
 }
 .public-area__map {
+  position: relative;
   -webkit-box-flex: 0;
   -ms-flex: 0 calc(62.6% - 15px);
   flex: 0 calc(62.6% - 15px)
@@ -5850,6 +5851,105 @@ body {
 }
 .public-area__description p {
   margin: 0 0 12px 0
+}
+.public-area__item {
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 50%
+}
+.public-area__item:hover.public-area__item_small .public-area__info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(-55%,-106%);
+  -ms-transform: translate(-55%,-106%);
+  transform: translate(-55%,-106%)
+}
+.public-area__item:hover.public-area__item_big .public-area__info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(-53%,-109%);
+  -ms-transform: translate(-53%,-109%);
+  transform: translate(-53%,-109%)
+}
+.public-area__item_parking {
+  top: 71%;
+  left: 26%
+}
+.public-area__item_parking:hover .public-area__info {
+  background-image: url(/img/dest/public-area/parking-area__content.png)
+}
+.public-area__item_shield {
+  top: 72%;
+  left: 40%
+}
+.public-area__item_people {
+  top: 57%;
+  left: 43%
+}
+.public-area__item_kindergarten {
+  top: 58%;
+  left: 54%
+}
+.public-area__item_baby-buggy {
+  top: 27%;
+  left: 60%
+}
+.public-area__item_kinds-playground {
+  top: 73%;
+  left: 60%
+}
+.public-area__item_nature {
+  top: 86%;
+  left: 77%
+}
+.public-area__item_crossing {
+  top: 54%;
+  left: 80%
+}
+.public-area__item_sport {
+  top: 11%;
+  left: 87%
+}
+.public-area__icon {
+  cursor: pointer
+}
+.public-area__icon_small {
+  width: 58px;
+  height: 58px
+}
+.public-area__icon_big {
+  width: 72px;
+  height: 72px
+}
+.public-area__info {
+  cursor: default;
+  display: none;
+  width: 284px;
+  height: 292px;
+  background-image: url(/img/dest/public-area/public-content__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 2
 }
 .public-header {
   display: -webkit-box;

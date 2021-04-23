@@ -4,6 +4,7 @@
         justify-content: space-between;
     }
     &__map {
+        position: relative;
         flex: 0 calc(62.6% - 15px);
         /* padding-left: calc((100% - 1410px) / 2); */
         img {
@@ -26,6 +27,92 @@
             
             margin: 0 0 12px 0;
         }
+    }
+    &__item {
+        position: absolute;
+        transition: all .3s ease-in-out;
+        border-radius: 50%;
+        &:hover {
+            &.public-area__item_small .public-area__info {
+                position: absolute;
+                display: flex;
+                transition: all .3s ease-in-out;
+                transform: translate(-55%, -106%);
+            }
+            &.public-area__item_big .public-area__info {
+                position: absolute;
+                display: flex;
+                transition: all .3s ease-in-out;
+                transform: translate(-53%,-109%);
+            }
+            
+        }
+        &_parking {
+            top: 71%;
+            left: 26%;
+            &:hover {
+                .public-area__info {
+                    background-image: url(/img/dest/public-area/parking-area__content.png);
+                }
+            }
+        }
+        &_shield {
+            top: 72%;
+            left: 40%;
+        }
+        &_people {
+            top: 57%;
+            left: 43%;
+        }
+        &_kindergarten {
+            top: 58%;
+            left: 54%;
+        }
+        &_baby-buggy {
+            top: 27%;
+            left: 60%;
+        }
+        &_kinds-playground {
+            top: 73%;
+            left: 60%;
+        }
+        &_nature {
+            top: 86%;
+            left: 77%;
+        }
+        &_crossing {
+            top: 54%;
+            left: 80%;
+        }
+        &_sport {
+            top: 11%;
+            left: 87%;
+        }
+    }
+      
+    &__icon {
+        cursor: pointer;
+        &_small {
+            width: 58px;
+            height: 58px;
+        }
+        &_big {
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__info {
+        cursor: default;
+        display: none;
+        width: 284px;
+        height: 292px;
+        background-image: url(/img/dest/public-area/public-content__bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        user-select: none;
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+        z-index: 2;
     }
 }
 

@@ -5232,6 +5232,28 @@ body {
   background-repeat: no-repeat,repeat;
   background-position: right .7em top 50%,0 0
 }
+.floor-switch__tab-item {
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.floor-switch__tab-item--1 {
+  display: block;
+  width: 169px;
+  height: 104px;
+  background-image: url(/img/dest/plans/entrance-1__icon--white.png)
+}
+.floor-switch__tab-item--1.commerce__tab-item--active {
+  background-image: url(/img/dest/plans/entrance-1__icon--green.png)
+}
+.floor-switch__tab-item--2 {
+  display: block;
+  width: 160px;
+  height: 104px;
+  background-image: url(/img/dest/plans/entrance-2__icon--white.png)
+}
+.floor-switch__tab-item--2.commerce__tab-item--active {
+  background-image: url(/img/dest/plans/entrance-2__icon--green.png)
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5436,7 +5458,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   max-width: 368px;
-  padding: 24px 24px 27px 24px;
+  padding: 17px 24px 23px 24px;
   background-color: #fff;
   -webkit-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
@@ -5539,7 +5561,7 @@ body {
 }
 .info-home {
   position: absolute;
-  top: 72.45%
+  top: 72%
 }
 .info-home__container {
   position: relative;
@@ -5615,6 +5637,11 @@ body {
 .apartment__description p {
   font-size: 15px;
   line-height: 24px
+}
+.apartment__tab-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .apartment__map {
   padding: 126px 0
@@ -6016,6 +6043,9 @@ body {
 .area-nav__inside .area-nav__icon {
   background-color: #00b83a
 }
+.advantages {
+  padding: 120px 0 107px 0
+}
 .advantages .section__title {
   margin: 0 0 50px 0
 }
@@ -6117,7 +6147,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: #00b83a;
-  padding: 0 10px
+  padding: 0 10px;
+  width: 80px
 }
 .big-gallery__nav .swiper-button-next:after,
 .big-gallery__nav .swiper-button-prev:after {
@@ -6316,7 +6347,7 @@ body {
   margin: 20px 0 0 0
 }
 .how-buy-apartment {
-  padding: 90px 0
+  padding: 110px 0 60px 0
 }
 .how-buy-apartment .section__title {
   margin: 0 0 50px 0
@@ -6673,31 +6704,6 @@ body {
   display: -ms-flexbox;
   display: flex
 }
-.commerce__tab-item {
-  background-repeat: no-repeat;
-  background-size: cover
-}
-.commerce__tab-item--1 {
-  display: block;
-  width: 169px;
-  height: 104px;
-  background-image: url(/img/dest/plans/entrance-1__icon--white.png)
-}
-.commerce__tab-item--1.commerce__tab-item--active {
-  background-image: url(/img/dest/plans/entrance-1__icon--green.png)
-}
-.commerce__tab-item--2 {
-  display: block;
-  width: 160px;
-  height: 104px;
-  background-image: url(/img/dest/plans/entrance-2__icon--white.png)
-}
-.commerce__tab-item--2.commerce__tab-item--active {
-  background-image: url(/img/dest/plans/entrance-2__icon--green.png)
-}
-.commerce__tab-item--active {
-  color: red
-}
 .commerce__tab-content {
   display: none
 }
@@ -6838,7 +6844,7 @@ body {
 }
 .build-progress {
   position: relative;
-  padding: 60px 0 130px
+  padding: 120px 0 130px
 }
 .build-progress .container {
   position: relative
@@ -6970,7 +6976,7 @@ body {
   background-image: url(/img/dest/buying-steps/buying-steps-bg.png);
   background-repeat: no-repeat;
   background-position: 50% 80%;
-  padding: 90px 0;
+  padding: 40px 0 90px;
   margin: 0 auto
 }
 .buying-steps .section__title {

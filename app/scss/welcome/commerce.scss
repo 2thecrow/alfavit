@@ -20,7 +20,7 @@
     &__tab-switch {
         display: flex;
     }
-    &__tab-item {
+/*     &__tab-item {
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -41,10 +41,7 @@
         &.commerce__tab-item--active {
             background-image: url(/img/dest/plans/entrance-2__icon--green.png);
         }
-    }
-    &__tab-item--active {
-        color: red;
-    }
+    } */
     &__content {
         
     }

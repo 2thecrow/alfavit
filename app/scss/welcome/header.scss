@@ -10,7 +10,7 @@
         justify-content: center;
         align-items: center;
         max-width: 368px;
-        padding: 24px 24px 27px 24px;
+        padding: 17px 24px 23px 24px;
         background-color: #fff;
         transition: all .25s ease-in-out;
         img {
@@ -116,8 +116,7 @@
 
 .info-home {
     position: absolute;
-    top: 72.45%;
-   
+    top: 72%;
     &__container {
         position: relative;
         max-width: 209px;
@@ -165,38 +164,3 @@
         }
     }
 }
-
-
-/* .test {
-    font-weight: 700;
-    font-size: 700px;
-    color: rgb(90, 177, 234);
-    line-height: 0.16;
-    mix-blend-mode: overlay;
-    margin: 188px 0 0 0;
-    z-index: 1;
-}
-.test2 {
-    font-weight: 700;
-    font-size: 500px;
-    color: rgb(43, 135, 204);
-    line-height: 0.224;
-    z-index: 1;
-      
-} */
-
-/* .test-decor {
-    position: absolute;
-    top: 603px;
-    left: 22.7%;
-    z-index: 2;
-} */
-
-
-/* .cloud-decor {
-    position: absolute;
-    top: 649px;
-    left: 65.7%;
-    z-index: 2;
-} */
-

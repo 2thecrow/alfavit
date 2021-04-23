@@ -168,4 +168,29 @@
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
 }
+
+.floor-switch {
+    &__tab-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__tab-item--1 {
+        display: block;
+        width: 169px;
+        height: 104px;
+        background-image: url(/img/dest/plans/entrance-1__icon--white.png);
+        &.commerce__tab-item--active {
+            background-image: url(/img/dest/plans/entrance-1__icon--green.png);
+        }
+    }
+    &__tab-item--2 {
+        display: block;
+        width: 160px;
+        height: 104px;
+        background-image: url(/img/dest/plans/entrance-2__icon--white.png);
+        &.commerce__tab-item--active {
+            background-image: url(/img/dest/plans/entrance-2__icon--green.png);
+        }
+    }
+}
   

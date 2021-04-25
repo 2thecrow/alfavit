@@ -5255,6 +5255,10 @@ body {
 .floor-switch__tab-item--2.floor-switch__tab-item--active {
   background-image: url(/img/dest/plans/entrance-2__icon--green.png)
 }
+.animated-title {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

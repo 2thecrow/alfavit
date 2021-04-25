@@ -1,9 +1,6 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* AOS.init(); */
-  //init animation lib
-
   /* Hamburher menu */
   var menu = document.querySelector('.mobile-menu');
   /* Aside menu */

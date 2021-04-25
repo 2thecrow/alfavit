@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* AOS.init(); */ //init animation lib
-
   /* Hamburher menu */
   const menu = document.querySelector('.mobile-menu'); /* Aside menu */
   const burger = document.querySelector('.burger'); /* desktop btn aside menu  */

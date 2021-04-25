@@ -5233,6 +5233,7 @@ body {
   background-position: right .7em top 50%,0 0
 }
 .floor-switch__tab-item {
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover
 }
@@ -6979,6 +6980,63 @@ body {
 }
 .build-progress-slider {
   height: 400px
+}
+.build-progress-slider__slide {
+  position: relative;
+  border-radius: 3px
+}
+.build-progress-slider__slide:hover .build-progress-slider__content {
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out
+}
+.build-progress-slider__image {
+  border-radius: 3px;
+  overflow: hidden
+}
+.build-progress-slider__content {
+  cursor: pointer;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: rgba(255,255,255,.95);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  padding: 40px 50px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out
+}
+.build-progress-slider__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #00b83a;
+  margin: 0 0 20px 0
+}
+.build-progress-slider__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #414343;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6
 }
 .buying-steps__wrapper {
   max-width: 1920px;

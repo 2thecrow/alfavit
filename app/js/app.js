@@ -241,7 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Build progress slider init */
   const buildProgress = new Swiper('.build-progress-slider', {
-    grabCursor: true,
     observer: true,
     runCallbacksOnInit: true,
     slidesPerView: 3,

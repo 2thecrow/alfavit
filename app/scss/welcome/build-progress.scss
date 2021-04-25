@@ -115,7 +115,52 @@
     /* overflow: visible; */
     height: 400px;
     &__slide {
-
+        position: relative;
+        border-radius: 3px;
+        &:hover {
+            .build-progress-slider__content {
+                opacity: 1;
+                transition: opacity .3s ease-in-out;
+            }
+            
+        }
+    }
+    &__image {
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    &__content {
+        cursor: pointer;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: rgba(255, 255, 255, .95);
+        backdrop-filter: blur(1px);
+        padding: 40px 50px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        color: #00b83a;
+        margin: 0 0 20px 0;
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 24px;
+        color: #414343;
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 6; /* number of lines  */
     }
     
 }

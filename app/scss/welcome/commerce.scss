@@ -20,28 +20,6 @@
     &__tab-switch {
         display: flex;
     }
-/*     &__tab-item {
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &__tab-item--1 {
-        display: block;
-        width: 169px;
-        height: 104px;
-        background-image: url(/img/dest/plans/entrance-1__icon--white.png);
-        &.commerce__tab-item--active {
-            background-image: url(/img/dest/plans/entrance-1__icon--green.png);
-        }
-    }
-    &__tab-item--2 {
-        display: block;
-        width: 160px;
-        height: 104px;
-        background-image: url(/img/dest/plans/entrance-2__icon--white.png);
-        &.commerce__tab-item--active {
-            background-image: url(/img/dest/plans/entrance-2__icon--green.png);
-        }
-    } */
     &__content {
         
     }
@@ -63,6 +41,11 @@
     }
     &__plan {
         position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
         svg {
             position: absolute;
             top: 0;

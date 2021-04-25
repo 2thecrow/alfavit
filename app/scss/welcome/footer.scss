@@ -4,7 +4,7 @@
         background-color: #edece7;
         max-width: 1920px;
         width: 100%;
-        padding: 63px 0;
+        padding: 63px 0 33px;
         margin: 0 auto;
     }
     &__bottom {
@@ -14,14 +14,28 @@
         padding: 21px 0;
         margin: 0 auto;
     }
+    &__logo {
+        display: block;
+        margin: 0 0 30px 0;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
     &__phone {
         display: flex;
+        margin: 0 0 30px 0;
     }
     &__call-back {
-        padding: 14px 15px;
+        .primary-btn {
+            display: inline-flex;
+            padding: 14px 15px;
+            margin: 0 0 30px 0;
+        }
     }
     &__socials {
-
+        margin: 0 0 30px 0;
     }
     &__nav {
 
@@ -64,12 +78,13 @@
 .developers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
     font-size: 14px;
     line-height: 24px;
     color: #afada5;
     text-align: right;
+    margin: 0 0 30px 0;
     &__link {
         font-weight: 900;
         color: #414343;

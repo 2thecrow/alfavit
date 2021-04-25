@@ -74,12 +74,14 @@
 .burger {
     cursor: pointer;
     display: none;
-    flex: 0 0 40px;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     background-color: #fff;
-    fill: rgba(255,101,41,.85);
+    svg {
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        fill: rgba(255,101,41,.85);
+    }
     .hide {
         opacity: 0;
         transition: opacity .25s ease-out;
@@ -112,14 +114,16 @@
     width: 0;
     top: 0;
     right: 0;
+    opacity: 0;
     background-color: #fff;
+    padding: 0 20px;
     z-index: 100;
-    transition: width .25s ease-out;
+    transition: all .25s ease-out;
     &__close {
         display: inline-flex;
         cursor: pointer;
         padding: 10px;
-        margin: 0 0 0 10px;
+        margin: 0 0 30px -10px;
         transition: all .3s ease-in-out;
         svg {
             flex: 0 0 24px;
@@ -135,8 +139,15 @@
             }
         }
     }
+    .nav__callback {
+        display: none;
+    }
+    .nav__phone {
+        display: none;
+    }
     &.open {
+        opacity: 1;
         width: 355px;
-        transition: width .25s ease-out;
+        transition: all .25s ease-out;
     }
 }

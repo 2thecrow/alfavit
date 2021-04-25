@@ -5,6 +5,77 @@
     .nav {
         padding: 0 24px;
     }
+    .gallery-tabs {
+        left: 30px;
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+    .apartment-slider {
+        /* overflow: hidden; */
+        &__image {
+            text-align: center;
+        }
+        .swiper-slide.swiper-slide-next {
+            opacity: 0;
+        }
+        .swiper-button-prev {
+            left: -40px;
+        }
+        .swiper-button-next {
+            right: -40px;
+        }
+    }
+    .contact-form {
+        &__decor {
+            display: none;
+        }
+    }
+    .apart-card-desc {
+        &__list {
+            justify-content: space-between;
+        }
+    }
+    .developer-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 60px 60px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .public-area {
+        &__wrapper {
+            /* max-width: 1200px; */
+            flex-wrap: wrap;
+            margin: 0 auto; 
+        }
+        &__map {
+            flex: 0 0 100%;
+            margin: 0 0 30px 0;
+        }
+        &__content {
+            flex: 0 0 100%;
+            padding: 0 15px;
+        }
+    }
+    .gallery-tabs {
+        position: relative;
+        left: 0;
+        margin: 0;
+        height: auto;
+        &__link {
+            margin: 0 0 30px 0;
+            &:not(:last-child) {
+                margin: 0 60px 30px 0;
+            }
+        }
+    }
+    .big-gallery__nav {
+        right: 50%;
+        transform: translate(50%);
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -12,6 +83,10 @@
         justify-content: flex-end;
         &__list {
             display: none;
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 32px;
         }
     }
     .burger {
@@ -23,8 +98,7 @@
             &__list {
                 display: flex;
                 flex-direction: column;
-                padding: 20px 20px;
-                margin: 0;
+                margin: 0 0 30px 0;
             }
             &__link {
                 color:#414343;
@@ -39,20 +113,238 @@
     }
 }
 
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { }
-
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) { 
+    .buying-steps {
+        &__wrapper {
+            background-image: none;
+        }
+    }
+    .buy-apartment {
+        &__tabs {
+            width: 100%;
+        }
+        &__tab {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+        }
+        &__tab-link {
+            display: inline-flex;
+        }
+    }
+    .buy-apartment-card {
+        flex-direction: column;
+        &__field {
+            max-width: 400px;
+        }
+    }
+    .apart-card-desc {
+        position: relative;
+        padding: 65px 65px 18px;
+        margin: 0 0 30px 0;
+        &__list {
+            z-index: 1;
+        }
+       
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+    .buy-apartment {
+        &__phone {
+            display: none;
+        }
+    }
+    .buy-apartment-card {
+        
+    }
+    
+}
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { }
+@media (max-width: 991.98px) { 
+    .big-gallery {
+        height: 100vh;
+    }
+    .apartment {
+        padding: 30px 0;
+    }
+    .apartment-slider {
+        height: 962px;
+        &__item {
+            flex-direction: column;
+        }
+        &__image {
+            text-align: center;
+        }
+    }
+    .universal-location__grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .infrastructure-card {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .commerce__tab-switch {
+        margin: 0 0 30px 0;
+    }
+    .developer {
+        &__about {
+            margin: 0 0 30px 0;
+        }
+    }
+    .developer-stats {
+        &__item {
+            flex: 0 0 33.3%;
+        }
+    }
+    .contacts {
+        &__form {
+            padding: 0 15px;
+        }
+        &__map {
+            padding: 0 15px;
+        }   
+    }
+}
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { }
+@media (max-width: 767.98px) {
+    .apart-card-desc {
+        padding: 40px 20px;
+        &__item {
+            flex: 0 0 49%;
+            margin: 0 0 30px 0;
+        }
+        &__number {
+            margin: 0;
+        }
+        &__count {
+            font-size: 60px;
+            line-height: 68px;
+        }
+        &__rub {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__years {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__percent {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+    .developer-stats {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 100%;
+        }
+    }
+    .nav__callback {
+        display: none;
+    }
+    .mobile-menu {
+        .nav__callback {
+            display: inline-flex;
+        }
+    }
+    .universal-location__grid {
+        grid-template-columns: 1fr;
+        .universal-location-big {
+            grid-column: auto;
+        }
+    }
+    .footer {
+        &__logo {
+            text-align: center;
+            img {
+                width: auto;
+            }
+        }
+        &__phone {
+            justify-content: center;
+        }
+        &__call-back {
+            display: flex;
+            justify-content: center;
+        }
+        &__socials {
+            justify-content: center;
+        }
+        .developers {
+            text-align: center;
+        }
+    }
+    .buy-apartment {
+        &__tab {
+            padding: 24px 15px;
+        }
+    }
+ }
 
 // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { }
+@media (max-width: 575.98px) {
+    .buy-apartment {
+        &__tab-content {
+            padding: 50px 10px;
+        }
+    }
+    .floor-switch {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav__phone {
+        display: none;
+    }
+    .mobile-menu {
+        .nav__phone {
+            display: inline-flex;
+            
+            background-image: url(/img/dest/header/phone-icon--fixed.png);
+            margin: 0 0 30px 0;
+            a {
+                color: #414343;
+            }
+        }
+    }
+    .apartment-slider {
+        &__item {
+            padding: 65px 15px 55px 15px;
+        }
+        &__tips {
+            transform: none;
+        }
+        &__image {
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section__title {
+        font-size: 36px;
+        line-height: 34px;
+    }
+    .buy-apartment {
+        &__tab {
+            font-size: 18px;
+        }
+    }
+}
 
 
 

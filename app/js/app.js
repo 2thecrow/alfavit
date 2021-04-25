@@ -38,6 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   /* End of Hamburher menu */
 
+  /* Fix header on scroll */
+  window.addEventListener("scroll", function () {
+    let headerHeight = document.querySelector(".header").offsetHeight;
+    let headerOffset = document.documentElement.scrollTop;
+    let headerNav = document.querySelector(".header__nav");
+
+    if (headerHeight < headerOffset) {
+      headerNav.classList.add('sticky');
+    } else {
+      headerNav.classList.remove('sticky');
+    }    
+  });
+
   /* Apartments slider */
   const ApartSlider = new Swiper('.apartment-slider__floor1', {
     // Optional parameters

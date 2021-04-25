@@ -1,24 +1,26 @@
 .apartment {
     overflow: hidden;
+    .section__title {
+        margin: 0 0 25px 0;
+    }
     &__description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
         color: #414343;
-        h2 {
-            font-weight: 900;
-            font-size: 56px;
-            line-height: 64px;
-            letter-spacing: -0.024em;;
-        }
+        
         p {
             font-size: 15px;
             line-height: 24px;
+            margin: 0 0 55px 0;
         }
     }
     &__tab-switch {
         display: flex;
+    }
+    &__tab-item {
+        
     }
     &__map {
         padding: 126px 0;
@@ -27,6 +29,10 @@
 
 .floor-map {
     display: none;
+    img {
+        width: 100%;
+        height: auto;
+    }
     &_active {
         display: block;
     }

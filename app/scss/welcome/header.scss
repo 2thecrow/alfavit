@@ -22,10 +22,32 @@
             background-color: rgba(255, 255, 255, .9);
             transition: all .25s ease-in-out;
         }
-    }
+    } 
     &__nav {
         display: flex;
-        
+        &.sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, .5);
+            z-index: 99;
+            .nav {
+                &__link {
+                    color: #414343;
+                    &:hover {
+                        &:before {
+                            background-color: #414343;
+                        }
+                    }
+                }
+                &__phone {
+                    background-image: url(/img/dest/header/phone-icon--fixed.png);
+                    a {
+                        color: #414343;
+                    }
+                } 
+            }
+        }
     }
     &__container {
         padding: 127px 0 0 0;

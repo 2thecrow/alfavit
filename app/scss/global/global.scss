@@ -3,6 +3,7 @@
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .primary-btn {
@@ -173,7 +174,7 @@
     &__tab-item {
         cursor: pointer;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     &__tab-item--1 {
         display: block;
@@ -194,8 +195,3 @@
         }
     }
 }
-
-.animated-title {
-    animation-delay: 1s;
-}
-  

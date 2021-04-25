@@ -9,6 +9,7 @@
     }
     &__header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 0 43px 0;
     }
@@ -63,6 +64,7 @@
     align-items: center;
     &__list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         list-style: none;
         padding: 0;

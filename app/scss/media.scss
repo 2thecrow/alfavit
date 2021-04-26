@@ -1,3 +1,13 @@
+@media screen and (max-width: 1680px) {
+    .build-progress {
+        .swiper-button-prev {
+            left: -30px;
+        }
+        .swiper-button-next {
+            right: -30px;
+        }
+    }
+}
 @media screen and (max-width: 1450px) {
     .header__logo {
         flex: 0 0 168px;
@@ -41,6 +51,9 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 60px 60px;
+    }
+    .build-progress .swiper-button-next, .build-progress .swiper-button-prev {
+        transform: translateY(60px);
     }
 }
 
@@ -115,6 +128,24 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) { 
+    .header {
+        position: relative;
+        &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, .6);
+                z-index: 0;
+        }
+    }
+    .header__title,
+    .header__sub-title,
+    .header__nav {
+        position: relative;
+    }
     .buying-steps {
         &__wrapper {
             background-image: none;
@@ -170,8 +201,12 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
+    .contact-map {
+        height: 400px;
+        margin: 0 0 30px 0;
+    }
     .big-gallery {
-        height: 100vh;
+        height: 680px;
     }
     .apartment {
         padding: 30px 0;
@@ -217,6 +252,47 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+    .header {
+        height: 250vh;
+        &__container {
+            padding: 90px 0 0 0;
+        }
+        &__developer {
+            margin: 100px 0 0 0;
+        }
+    }
+    .apartment-slider {
+        .swiper-button-next {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255,101,41,.8);
+            background-image: url(/img/dest/slider/arrow__right-disabled.png);
+        }
+        .swiper-button-prev {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255,101,41,.8);
+            background-image: url(/img/dest/slider/arrow__left-disabled.png);
+        }
+    }
+    .build-progress {
+        .section__title {
+            margin: 0 0 15px 0;
+        }
+        .swiper-button-next{
+            transform: translateY(90px);
+        } 
+        .swiper-button-prev {
+            transform: translateY(90px);
+        }
+    }
+    .build-progress-nav {
+        &__item {
+            &:not(:last-child) {
+                margin: 0 44px 15px 0;
+            }
+        }
+    }
     .apart-card-desc {
         padding: 40px 20px;
         &__item {
@@ -290,13 +366,119 @@
             padding: 24px 15px;
         }
     }
- }
+    .public-area {
+        &__icon {
+            &_small {
+                width: 40px;
+                height: 40px;
+            }
+            &_big {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &__item {
+            &_parking {
 
+            }
+        }
+        &__info {
+            width: 234px;
+            height: 242px;
+        }
+    }
+ }
+@media (max-width: 680px) {
+    .header {
+        /* height: auto; */
+        &__container {
+            padding: 90px 0;
+        }
+        .desc-home {
+            left: 60%;
+        }
+    }
+    .public-area {
+        &__item {
+            z-index: 1;
+            &:hover {
+                &.public-area__item_big .public-area__info {
+                    display: none;
+                }
+                &.public-area__item_small .public-area__info {
+                    display: none;
+                }
+            }
+        }
+        &__info_wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-100%);
+            z-index: 0;
+            .public-area__info {
+
+            }
+        }
+    }
+    
+}
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .contact-form {
+        padding: 54px 15px 30px;
+    }
+
+    .header {
+        height: auto;
+        &__title {
+            font-size: 46px;
+            line-height: 53px;
+        }
+        &__sub-title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__developer {
+            max-width: 100%;
+            margin: 60px 0;
+        }
+        .desc-home {
+            position: relative;
+            left: auto;
+            top: auto;
+            margin: 0 0 30px 0;
+            &__container {
+                max-width: 100%;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        .info-home {
+            position: relative;
+            left: auto;
+            top: auto;
+            margin: 0 0 30px 0;
+            &__container {
+                max-width: 100%;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
     .buy-apartment {
         &__tab-content {
-            padding: 50px 10px;
+            padding: 50px 0;
+        }
+    }
+    .banks {
+        padding: 60px 20px;
+    }
+    .buy-apartment-card {
+        &__content {
+            padding: 0 15px;
         }
     }
     .floor-switch {
@@ -318,6 +500,7 @@
         }
     }
     .apartment-slider {
+        margin: 0 0 60px 0;
         &__item {
             padding: 65px 15px 55px 15px;
         }
@@ -332,8 +515,34 @@
             }
         }
     }
+    .build-progress-slider {
+        &__image {
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
 }
-
+@media (max-width: 429px) {
+    .buy-apartment-card__submit {
+        flex-wrap: wrap;
+    }
+    .buy-apartment-card__checkbox {
+        margin: 15px 0 0 0px;
+        &.custom-checkbox input:checked + label::after {
+            top: -2px;
+            left: 9px;
+        }
+    }
+    .contact-form {
+        &__radio-group li label {
+            font-size: 10px;
+            padding: 8px 8px;
+        }
+    }
+}
 @media (max-width: 480px) {
     .section__title {
         font-size: 36px;
@@ -343,6 +552,36 @@
         &__tab {
             font-size: 18px;
         }
+    }
+    .apartment__map {
+        padding: 60px 0;
+    }
+    .advantages {
+        padding: 60px 0;
+    }
+    .infrastructure__wrapper {
+        padding: 60px 0;
+    }
+    .how-buy-apartment {
+        padding: 60px 0;
+    }
+    .buying-steps__wrapper {
+        padding: 60px 0;
+    }
+    .commerce {
+        padding: 60px 0;
+    }
+    .universal-location {
+        padding: 30px 0 60px 0;
+    }
+    .build-progress {
+        padding: 60px 0;
+    }
+    .contacts__wrapper {
+        padding: 60px 0;
+    }
+    .developer {
+        padding: 60px 0 0 0;
     }
 }
 

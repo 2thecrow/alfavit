@@ -167,9 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).addClass('gallery-tabs__link--active');
     $(href).addClass('gallery__tab--active');
   });
-  /* Init gallery tab */
-
-  $('.gallery-tabs__link:first').click();
   /* Commerce tabs handler */
 
   $('.commerce__tab-item').click(function (e) {
@@ -183,9 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
       $(href).addClass('in');
     }, 200);
   });
-  /* Init first commerce tab */
-
-  $('.commerce__tab-item:first').click();
   /* How to buy tabs handler */
 
   $('.buy-apartment__tab').click(function (e) {
@@ -196,9 +190,6 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).addClass('buy-apartment__tab--active');
     $(href).addClass('buy-apartment__tab-content--active');
   });
-  /* Init first how to buy tab */
-
-  $('.buy-apartment__tab:first').click();
   /* Build progress filter by years*/
 
   $('.build-progress-nav').on('click', 'a', function () {
@@ -238,6 +229,29 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1.5,
+        spaceBetween: 30
+      },
+      // when window width is >= 480px
+      1000: {
+        slidesPerView: 2.2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 2.4,
+        spaceBetween: 30
+      },
+      1500: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
     },
     updateOnImagesReady: true
   });

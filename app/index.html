@@ -27,22 +27,22 @@
 			<nav class="nav">
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a href="/" class="nav__link">О проекте</a>
+						<a href="#advantages" class="nav__link">О проекте</a>
 					</li>
 					<li class="nav__item">
-						<a href="/" class="nav__link">Квартиры</a>
+						<a href="#apartment" class="nav__link">Квартиры</a>
 					</li>
 					<li class="nav__item">
-						<a href="/" class="nav__link">Галерея</a>
+						<a href="#gallery" class="nav__link">Галерея</a>
 					</li>
 					<li class="nav__item">
-						<a href="/" class="nav__link">Как купить</a>
+						<a href="#how-buy-apartment" class="nav__link">Как купить</a>
 					</li>
 					<li class="nav__item">
-						<a href="/" class="nav__link">Коммерция</a>
+						<a href="#commerce" class="nav__link">Коммерция</a>
 					</li>
 					<li class="nav__item">
-						<a href="/" class="nav__link">О застройщике</a>
+						<a href="#developer" class="nav__link">О застройщике</a>
 					</li>
 				</ul>
 				<div class="nav__contacts">
@@ -64,22 +64,22 @@
 					</div>
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="/" class="nav__link">О проекте</a>
+							<a href="#advantages" class="nav__link">О проекте</a>
 						</li>
 						<li class="nav__item">
-							<a href="/" class="nav__link">Квартиры</a>
+							<a href="#apartment" class="nav__link">Квартиры</a>
 						</li>
 						<li class="nav__item">
-							<a href="/" class="nav__link">Галерея</a>
+							<a href="#gallery" class="nav__link">Галерея</a>
 						</li>
 						<li class="nav__item">
-							<a href="/" class="nav__link">Как купить</a>
+							<a href="#how-buy-apartment" class="nav__link">Как купить</a>
 						</li>
 						<li class="nav__item">
-							<a href="/" class="nav__link">Коммерция</a>
+							<a href="#commerce" class="nav__link">Коммерция</a>
 						</li>
 						<li class="nav__item">
-							<a href="/" class="nav__link">О застройщике</a>
+							<a href="#developer" class="nav__link">О застройщике</a>
 						</li>
 					</ul>
 					<div class="nav__phone">
@@ -153,7 +153,7 @@
 	</header>
 
 	<!-- Apartnets -->
-	<div class="apartment wrapper">
+	<div class="apartment wrapper" id="apartment">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
@@ -721,7 +721,7 @@
 	</div>
 
 	<!-- Public area  -->
-	<div class="public-area wrapper">
+	<div class="public-area wrapper" id="public-area">
 		<div class="public-area__wrapper">
 			<div class="public-area__map">
 				<img src="/img/dest/public-area/public-area__bg.png" alt="Building plan">
@@ -782,13 +782,15 @@
 					<div class="public-area__info"></div>
 				</div>
 				<!-- Sport -->
-				<div class="public-area__item public-area__item_big public-area__item_sport">
+				<div class="public-area__item public-area__item_big public-area__item_sport" id="#sport">
 					<div class="public-area__icon public-area__icon_big">
 						<img src="/img/dest/public-area/sport-area-icon.png" alt="Sport area">
 					</div>
 					<div class="public-area__info"></div>
 				</div>
-				
+				<div class="public-area__info_wrapper">
+					<div class="public-area__info" id="sport"></div>
+				</div>
 			</div>
 			<div class="public-area__content">
 				<div class="public-area__header public-header">
@@ -820,7 +822,7 @@
 	</div> 
 
 	<!-- Advantages -->
-	<div class="advantages">
+	<div class="advantages" id="advantages">
 		<div class="container">
 			<!-- Title -->
 			<div class="row">
@@ -917,7 +919,7 @@
 	</div>
 	
 	<!-- Gallery -->
-	<div class="gallery wrapper">
+	<div class="gallery wrapper" id="gallery">
 		<div class="container-fluid wrapper">
 			<div class="row">
 				<div class="gallery__tab-content">
@@ -927,7 +929,7 @@
 								<div class="col">
 									<div class="gallery-tabs__nav">
 										<div class="gallery-tabs__list">
-											<a href="#gallery1" class="gallery-tabs__link">Архитектура</a>
+											<a href="#gallery1" class="gallery-tabs__link gallery-tabs__link--active">Архитектура</a>
 											<a href="#gallery2" class="gallery-tabs__link">Благоустройство</a>
 											<a href="#gallery3" class="gallery-tabs__link">Благоустройство</a>
 										</div>
@@ -937,7 +939,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery__tab" id="gallery1">
+					<div class="gallery__tab gallery__tab--active" id="gallery1">
 						<!-- Slider main container -->
 						<div class="swiper-container big-gallery">
 							<!-- Additional required wrapper -->
@@ -1051,7 +1053,7 @@
 	</div>
 
 	<!-- Infrastructure -->
-	<div class="infrastructure wrapper">
+	<div class="infrastructure wrapper" id="infrastructure">
 		<div class="infrastructure__wrapper">
 			<div class="container">
 				<div class="row">
@@ -1185,7 +1187,7 @@
 	</div>
 
 	<!-- How to buy apartments -->
-	<div class="how-buy-apartment wrapper">
+	<div class="how-buy-apartment wrapper" id="how-buy-apartment">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -1196,7 +1198,7 @@
 				<div class="col">
 					<div class="buy-apartment__header">
 						<div class="buy-apartment__tabs">
-							<a href="#buy-tab-1" class="buy-apartment__tab">
+							<a href="#buy-tab-1" class="buy-apartment__tab buy-apartment__tab--active">
 								<div class="buy-apartment__tab-link">Ипотека</div>
 							</a>
 							<a href="#buy-tab-2" class="buy-apartment__tab">
@@ -1212,7 +1214,7 @@
 					</div>
 					<div class="buy-apartment__content">
 						<!-- Ipoteka tab -->
-						<div class="buy-apartment__tab-content" id="buy-tab-1">
+						<div class="buy-apartment__tab-content buy-apartment__tab-content--active" id="buy-tab-1">
 							<!-- Ipoteka card -->
 							<div class="buy-apartment__card buy-apartment-card">
 								<!-- apart-card-desc__ipoteka -->
@@ -1449,7 +1451,7 @@
 	</div>
 
 	<!-- Buying steps  -->
-	<div class="buying-steps">
+	<div class="buying-steps" id="buying-steps">
 		<div class="buying-steps__wrapper">
 			<div class="container">
 				<div class="row">
@@ -1522,7 +1524,7 @@
 	</div>
 
 	<!-- Commerce  -->
-	<div class="commerce wrapper">
+	<div class="commerce wrapper" id="commerce">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
@@ -1541,13 +1543,13 @@
 						<span class="commerce__description--bold">9&nbsp;торгово-офисных помещений от&nbsp;42,49 м<sup>2</sup>&nbsp;до&nbsp;69,14 м<sup>2</sup>.</span> Весь первый этаж ЖК&nbsp;&laquo;Алфавит&raquo; спроектирвоан под бизнес различного назначения (продуктовый магазин, магазин мебели, магазин зоотоваров, магазин бытовой химии, магазин одежды, магазин косметики, аптека, стоматология, косметология, ателье, оптика, кондитерская, кафе).
 					</div>
 					<div class="commerce__tab-switch floor-switch">
-						<a class="commerce__tab-item floor-switch__tab-item floor-switch__tab-item--1" href="#commerce-1"></a>
+						<a class="commerce__tab-item floor-switch__tab-item floor-switch__tab-item--1 floor-switch__tab-item--active" href="#commerce-1"></a>
 						<a class="commerce__tab-item floor-switch__tab-item floor-switch__tab-item--2" href="#commerce-2"></a>
 					</div>
 				</div>
 				<div class="col-12 col-lg-8">
 					<div class="commerce__content">
-						<div class="commerce__tab-content faded in" id="commerce-1">
+						<div class="commerce__tab-content commerce__tab-content--active faded in" id="commerce-1">
 							<div class="commerce__plan">
 								<img src="/img/dest/plans/commerce_1_plan.png" alt="Commerce plan 1">
 								<svg viewbox="0 0 797 567">
@@ -1591,7 +1593,7 @@
 	</div>
 
 	<!-- Universal location  -->
-	<div class="universal-location wrapper">
+	<div class="universal-location wrapper" id="universal-location">
 		<div class="container">
 			<!-- Title -->
 			<div class="row">
@@ -1665,7 +1667,7 @@
 	</div>
 
 	<!-- Build progress -->
-	<div class="build-progress wrapper">
+	<div class="build-progress wrapper" id="build-progress">
 		<div class="container">
 			<!-- If we need navigation buttons -->
 			<div class="swiper-button-prev"></div>
@@ -1831,7 +1833,7 @@
 	</div>
 
 	<!-- contacts -->
-	<div class="contacts wrapper">
+	<div class="contacts wrapper" id="contacts">
 		<div class="contacts__wrapper">
 			<div class="container">
 				<div class="row">
@@ -1919,7 +1921,7 @@
 	</div>
 
 	<!-- Developer -->
-	<div class="developer wrapper">
+	<div class="developer wrapper" id="developer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-xl-4">

@@ -72,7 +72,9 @@
             flex: 0 0 100%;
             padding: 0 15px;
         }
+
     }
+    
     .gallery-tabs {
         position: relative;
         left: 0;
@@ -390,7 +392,6 @@
  }
 @media (max-width: 680px) {
     .header {
-        /* height: auto; */
         &__container {
             padding: 90px 0;
         }
@@ -410,14 +411,12 @@
                 }
             }
         }
-        &__info_wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transform: translateY(-100%);
-            z-index: 0;
-            .public-area__info {
-
+        &__info {
+            &_wrapper {
+                .public-area__info {
+                    appearance: inherit;
+                    opacity: 1;
+                }
             }
         }
     }
@@ -428,7 +427,6 @@
     .contact-form {
         padding: 54px 15px 30px;
     }
-
     .header {
         height: auto;
         &__title {
@@ -469,6 +467,9 @@
         }
     }
     .buy-apartment {
+        &__tab {
+            padding: 24px 10px;
+        }
         &__tab-content {
             padding: 50px 0;
         }

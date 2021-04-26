@@ -5989,9 +5989,6 @@ body {
   top: 71%;
   left: 26%
 }
-.public-area__item_parking:hover .public-area__info {
-  background-image: url(/img/dest/public-area/parking-area__content.png)
-}
 .public-area__item_shield {
   top: 72%;
   left: 40%
@@ -6040,9 +6037,6 @@ body {
   display: none;
   width: 284px;
   height: 292px;
-  background-image: url(/img/dest/public-area/public-content__bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6052,6 +6046,22 @@ body {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   z-index: 2
+}
+.public-area__info_wrapper .public-area__info {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0
+}
+.public-area__info_acvite {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 5
 }
 .public-header {
   display: -webkit-box;
@@ -8086,14 +8096,11 @@ body {
   .public-area__item:hover.public-area__item_small .public-area__info {
     display: none
   }
-  .public-area__info_wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    z-index: 0
+  .public-area__info_wrapper .public-area__info {
+    -webkit-appearance: inherit;
+    -moz-appearance: inherit;
+    appearance: inherit;
+    opacity: 1
   }
 }
 @media (max-width:575.98px) {
@@ -8138,6 +8145,9 @@ body {
   }
   .header .info-home__container:before {
     display: none
+  }
+  .buy-apartment__tab {
+    padding: 24px 10px
   }
   .buy-apartment__tab-content {
     padding: 50px 0

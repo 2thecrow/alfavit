@@ -69,11 +69,6 @@
         &_parking {
             top: 71%;
             left: 26%;
-            &:hover {
-                .public-area__info {
-                    background-image: url(/img/dest/public-area/parking-area__content.png);
-                }
-            }
         }
         &_shield {
             top: 72%;
@@ -125,14 +120,26 @@
         display: none;
         width: 284px;
         height: 292px;
-        background-image: url(/img/dest/public-area/public-content__bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         user-select: none;
         pointer-events: none;
         transition: all .3s ease-in-out;
         z-index: 2;
+        &_wrapper {
+            .public-area__info {
+                appearance: none;
+                opacity: 0;
+            }
+        }
+        &_acvite {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: block;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
     }
+    
 }
 
 .public-header {

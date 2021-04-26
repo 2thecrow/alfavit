@@ -65,6 +65,34 @@ document.addEventListener('DOMContentLoaded', function () {
       headerNav.classList.remove('sticky');
     }
   });
+  /* Public Area on hover*/
+
+  $('.public-area__item').on('touchstart mouseenter', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var id = $(this).attr('id');
+    $('.public-area__info').removeClass('public-area__info_acvite');
+    $(id).addClass('public-area__info_acvite');
+  });
+  /* Public Area on hover leave*/
+
+  $('.public-area__item').on('mouseleave', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var id = $(this).attr('id');
+    $('.public-area__info').removeClass('public-area__info_acvite');
+  });
+  /* ScrollTo */
+
+  $('.nav__link').on('click', function (e) {
+    if (this.hash !== '') {
+      e.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300);
+    }
+  });
   /* Apartments slider */
 
   var ApartSlider = new Swiper('.apartment-slider__floor1', {
